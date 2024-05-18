@@ -1268,11 +1268,11 @@ PRODUCT_PACKAGES += \
     moto-core_services \
     moto-settings \
     tcmclient \
-    moto-ims-ext \
-    moto-telephony \
     com.android.hotwordenrollment.common.util \
     com.qti.dpmframework \
     dpmapi \
+    moto-ims-ext \
+    moto-telephony \
     qcrilhook \
     vendor.qti.hardware.alarm-V1.0-java \
     manifest_android.hardware.drm@1.3-service.widevine \
