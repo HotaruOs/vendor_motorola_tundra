@@ -83,18 +83,6 @@ android_app_import {
 }
 
 android_app_import {
-	name: "MotCamera3AI",
-	owner: "motorola",
-	apk: "proprietary/product/app/MotCamera3AI/MotCamera3AI.apk",
-	preprocessed: true,
-	presigned: true,
-	dex_preopt: {
-		enabled: false,
-	},
-	product_specific: true,
-}
-
-android_app_import {
 	name: "HotwordEnrollmentOKGoogleHEXAGON_WIDEBAND",
 	owner: "motorola",
 	apk: "proprietary/product/priv-app/HotwordEnrollmentOKGoogleHEXAGON_WIDEBAND/HotwordEnrollmentOKGoogleHEXAGON_WIDEBAND.apk",
@@ -119,16 +107,15 @@ android_app_import {
 }
 
 android_app_import {
-	name: "MotCamera4",
+	name: "MotCamera3AI",
 	owner: "motorola",
-	apk: "proprietary/product/priv-app/MotCamera4/MotCamera4.apk",
-	overrides: ["Aperture", "Camera2"],
-	certificate: "platform",
+	apk: "proprietary/system_ext/app/MotCamera3AI/MotCamera3AI.apk",
+	preprocessed: true,
+	presigned: true,
 	dex_preopt: {
 		enabled: false,
 	},
-	privileged: true,
-	product_specific: true,
+	system_ext_specific: true,
 }
 
 android_app_import {
@@ -139,6 +126,19 @@ android_app_import {
 	dex_preopt: {
 		enabled: false,
 	},
+	system_ext_specific: true,
+}
+
+android_app_import {
+	name: "MotCamera4",
+	owner: "motorola",
+	apk: "proprietary/system_ext/priv-app/MotCamera4/MotCamera4.apk",
+	overrides: ["Aperture", "Camera2"],
+	certificate: "platform",
+	dex_preopt: {
+		enabled: false,
+	},
+	privileged: true,
 	system_ext_specific: true,
 }
 
