@@ -3129,13 +3129,35 @@ PRODUCT_COPY_FILES += \
 
 PRODUCT_COPY_FILES += \
     vendor/motorola/tundra/proprietary/product/etc/init/init.motcamera3.lens.rc:$(TARGET_COPY_OUT_PRODUCT)/etc/init/init.motcamera3.lens.rc \
+    vendor/motorola/tundra/proprietary/product/etc/permissions/UimGba.xml:$(TARGET_COPY_OUT_PRODUCT)/etc/permissions/UimGba.xml \
+    vendor/motorola/tundra/proprietary/product/etc/permissions/UimGbaManager.xml:$(TARGET_COPY_OUT_PRODUCT)/etc/permissions/UimGbaManager.xml \
+    vendor/motorola/tundra/proprietary/product/etc/permissions/UimService.xml:$(TARGET_COPY_OUT_PRODUCT)/etc/permissions/UimService.xml \
     vendor/motorola/tundra/proprietary/product/etc/permissions/com.motorola.camera3.content.ai.xml:$(TARGET_COPY_OUT_PRODUCT)/etc/permissions/com.motorola.camera3.content.ai.xml \
     vendor/motorola/tundra/proprietary/product/etc/permissions/com.motorola.camera3.lens.xml:$(TARGET_COPY_OUT_PRODUCT)/etc/permissions/com.motorola.camera3.lens.xml \
     vendor/motorola/tundra/proprietary/product/etc/permissions/com.motorola.camera3.xml:$(TARGET_COPY_OUT_PRODUCT)/etc/permissions/com.motorola.camera3.xml \
     vendor/motorola/tundra/proprietary/product/etc/permissions/deviceowner-configuration-com.motorola.camera3.xml:$(TARGET_COPY_OUT_PRODUCT)/etc/permissions/deviceowner-configuration-com.motorola.camera3.xml \
     vendor/motorola/tundra/proprietary/product/etc/permissions/privapp-permissions-com.motorola.camera3.xml:$(TARGET_COPY_OUT_PRODUCT)/etc/permissions/privapp-permissions-com.motorola.camera3.xml \
     vendor/motorola/tundra/proprietary/product/etc/sysconfig/hiddenapi-whitelist-com.motorola.camera3.xml:$(TARGET_COPY_OUT_PRODUCT)/etc/sysconfig/hiddenapi-whitelist-com.motorola.camera3.xml \
+    vendor/motorola/tundra/proprietary/system/etc/permissions/privapp-permissions-qti.xml:$(TARGET_COPY_OUT_SYSTEM)/etc/permissions/privapp-permissions-qti.xml \
+    vendor/motorola/tundra/proprietary/system/etc/sysconfig/qti_whitelist.xml:$(TARGET_COPY_OUT_SYSTEM)/etc/sysconfig/qti_whitelist.xml \
+    vendor/motorola/tundra/proprietary/system_ext/etc/dpm/dpm.conf:$(TARGET_COPY_OUT_SYSTEM_EXT)/etc/dpm/dpm.conf \
+    vendor/motorola/tundra/proprietary/system_ext/etc/init/dpmd.rc:$(TARGET_COPY_OUT_SYSTEM_EXT)/etc/init/dpmd.rc \
+    vendor/motorola/tundra/proprietary/system_ext/etc/init/qspmsvc.rc:$(TARGET_COPY_OUT_SYSTEM_EXT)/etc/init/qspmsvc.rc \
+    vendor/motorola/tundra/proprietary/system_ext/etc/init/wfdservice.rc:$(TARGET_COPY_OUT_SYSTEM_EXT)/etc/init/wfdservice.rc \
     vendor/motorola/tundra/proprietary/system_ext/etc/permissions/com.android.hotwordenrollment.common.util.xml:$(TARGET_COPY_OUT_SYSTEM_EXT)/etc/permissions/com.android.hotwordenrollment.common.util.xml \
+    vendor/motorola/tundra/proprietary/system_ext/etc/permissions/com.qti.dpmframework.xml:$(TARGET_COPY_OUT_SYSTEM_EXT)/etc/permissions/com.qti.dpmframework.xml \
+    vendor/motorola/tundra/proprietary/system_ext/etc/permissions/dpmapi.xml:$(TARGET_COPY_OUT_SYSTEM_EXT)/etc/permissions/dpmapi.xml \
+    vendor/motorola/tundra/proprietary/system_ext/etc/permissions/moto-telephony.xml:$(TARGET_COPY_OUT_SYSTEM_EXT)/etc/permissions/moto-telephony.xml \
+    vendor/motorola/tundra/proprietary/system_ext/etc/permissions/qcrilhook.xml:$(TARGET_COPY_OUT_SYSTEM_EXT)/etc/permissions/qcrilhook.xml \
+    vendor/motorola/tundra/proprietary/system_ext/etc/permissions/qti_libpermissions.xml:$(TARGET_COPY_OUT_SYSTEM_EXT)/etc/permissions/qti_libpermissions.xml \
+    vendor/motorola/tundra/proprietary/system_ext/etc/permissions/qti_permissions.xml:$(TARGET_COPY_OUT_SYSTEM_EXT)/etc/permissions/qti_permissions.xml \
+    vendor/motorola/tundra/proprietary/system_ext/etc/permissions/vendor.qti.ims.rcsservice.xml:$(TARGET_COPY_OUT_SYSTEM_EXT)/etc/permissions/vendor.qti.ims.rcsservice.xml \
+    vendor/motorola/tundra/proprietary/system_ext/etc/permissions/wfd-system-ext-privapp-permissions-qti.xml:$(TARGET_COPY_OUT_SYSTEM_EXT)/etc/permissions/wfd-system-ext-privapp-permissions-qti.xml \
+    vendor/motorola/tundra/proprietary/system_ext/etc/seccomp_policy/wfdservice.policy:$(TARGET_COPY_OUT_SYSTEM_EXT)/etc/seccomp_policy/wfdservice.policy \
+    vendor/motorola/tundra/proprietary/system_ext/etc/sysconfig/qti_telephony_system_packages_config.xml:$(TARGET_COPY_OUT_SYSTEM_EXT)/etc/sysconfig/qti_telephony_system_packages_config.xml \
+    vendor/motorola/tundra/proprietary/system_ext/etc/sysconfig/qti_whitelist_system_ext.xml:$(TARGET_COPY_OUT_SYSTEM_EXT)/etc/sysconfig/qti_whitelist_system_ext.xml \
+    vendor/motorola/tundra/proprietary/system_ext/etc/wfdconfigsink.xml:$(TARGET_COPY_OUT_SYSTEM_EXT)/etc/wfdconfigsink.xml \
+    vendor/motorola/tundra/proprietary/vendor/etc/ArmHDCP_QTI_Android.cfg:$(TARGET_COPY_OUT_VENDOR)/etc/ArmHDCP_QTI_Android.cfg \
     vendor/motorola/tundra/proprietary/vendor/etc/acdbdata/Bluetooth_cal.acdb:$(TARGET_COPY_OUT_VENDOR)/etc/acdbdata/Bluetooth_cal.acdb \
     vendor/motorola/tundra/proprietary/vendor/etc/acdbdata/General_cal.acdb:$(TARGET_COPY_OUT_VENDOR)/etc/acdbdata/General_cal.acdb \
     vendor/motorola/tundra/proprietary/vendor/etc/acdbdata/Global_cal.acdb:$(TARGET_COPY_OUT_VENDOR)/etc/acdbdata/Global_cal.acdb \
@@ -3158,13 +3180,199 @@ PRODUCT_COPY_FILES += \
     vendor/motorola/tundra/proprietary/vendor/etc/camera/mot_engine_config.bin:$(TARGET_COPY_OUT_VENDOR)/etc/camera/mot_engine_config.bin \
     vendor/motorola/tundra/proprietary/vendor/etc/camera/vidhance_calibration:$(TARGET_COPY_OUT_VENDOR)/etc/camera/vidhance_calibration \
     vendor/motorola/tundra/proprietary/vendor/etc/camera/vidhance_calibration_2rd:$(TARGET_COPY_OUT_VENDOR)/etc/camera/vidhance_calibration_2rd \
+    vendor/motorola/tundra/proprietary/vendor/etc/charger_fstab.qti:$(TARGET_COPY_OUT_VENDOR)/etc/charger_fstab.qti \
+    vendor/motorola/tundra/proprietary/vendor/etc/charger_fw_fstab.qti:$(TARGET_COPY_OUT_VENDOR)/etc/charger_fw_fstab.qti \
+    vendor/motorola/tundra/proprietary/vendor/etc/cne/mwqem.conf:$(TARGET_COPY_OUT_VENDOR)/etc/cne/mwqem.conf \
+    vendor/motorola/tundra/proprietary/vendor/etc/cne/profileMwqem.xml:$(TARGET_COPY_OUT_VENDOR)/etc/cne/profileMwqem.xml \
+    vendor/motorola/tundra/proprietary/vendor/etc/cne/wqeclient/ATT/ATT_profile1.xml:$(TARGET_COPY_OUT_VENDOR)/etc/cne/wqeclient/ATT/ATT_profile1.xml \
+    vendor/motorola/tundra/proprietary/vendor/etc/cne/wqeclient/ATT/ATT_profile2.xml:$(TARGET_COPY_OUT_VENDOR)/etc/cne/wqeclient/ATT/ATT_profile2.xml \
+    vendor/motorola/tundra/proprietary/vendor/etc/cne/wqeclient/ATT/ATT_profile3.xml:$(TARGET_COPY_OUT_VENDOR)/etc/cne/wqeclient/ATT/ATT_profile3.xml \
+    vendor/motorola/tundra/proprietary/vendor/etc/cne/wqeclient/ATT/ATT_profile4.xml:$(TARGET_COPY_OUT_VENDOR)/etc/cne/wqeclient/ATT/ATT_profile4.xml \
+    vendor/motorola/tundra/proprietary/vendor/etc/cne/wqeclient/ATT/ATT_profile5.xml:$(TARGET_COPY_OUT_VENDOR)/etc/cne/wqeclient/ATT/ATT_profile5.xml \
+    vendor/motorola/tundra/proprietary/vendor/etc/cne/wqeclient/ATT/ATT_profile6.xml:$(TARGET_COPY_OUT_VENDOR)/etc/cne/wqeclient/ATT/ATT_profile6.xml \
+    vendor/motorola/tundra/proprietary/vendor/etc/cne/wqeclient/ROW/ROW_profile1.xml:$(TARGET_COPY_OUT_VENDOR)/etc/cne/wqeclient/ROW/ROW_profile1.xml \
+    vendor/motorola/tundra/proprietary/vendor/etc/cne/wqeclient/ROW/ROW_profile15.xml:$(TARGET_COPY_OUT_VENDOR)/etc/cne/wqeclient/ROW/ROW_profile15.xml \
+    vendor/motorola/tundra/proprietary/vendor/etc/cne/wqeclient/ROW/ROW_profile16.xml:$(TARGET_COPY_OUT_VENDOR)/etc/cne/wqeclient/ROW/ROW_profile16.xml \
+    vendor/motorola/tundra/proprietary/vendor/etc/cne/wqeclient/ROW/ROW_profile17.xml:$(TARGET_COPY_OUT_VENDOR)/etc/cne/wqeclient/ROW/ROW_profile17.xml \
+    vendor/motorola/tundra/proprietary/vendor/etc/cne/wqeclient/ROW/ROW_profile18.xml:$(TARGET_COPY_OUT_VENDOR)/etc/cne/wqeclient/ROW/ROW_profile18.xml \
+    vendor/motorola/tundra/proprietary/vendor/etc/cne/wqeclient/ROW/ROW_profile19.xml:$(TARGET_COPY_OUT_VENDOR)/etc/cne/wqeclient/ROW/ROW_profile19.xml \
+    vendor/motorola/tundra/proprietary/vendor/etc/cne/wqeclient/ROW/ROW_profile2.xml:$(TARGET_COPY_OUT_VENDOR)/etc/cne/wqeclient/ROW/ROW_profile2.xml \
+    vendor/motorola/tundra/proprietary/vendor/etc/cne/wqeclient/ROW/ROW_profile20.xml:$(TARGET_COPY_OUT_VENDOR)/etc/cne/wqeclient/ROW/ROW_profile20.xml \
+    vendor/motorola/tundra/proprietary/vendor/etc/cne/wqeclient/ROW/ROW_profile21.xml:$(TARGET_COPY_OUT_VENDOR)/etc/cne/wqeclient/ROW/ROW_profile21.xml \
+    vendor/motorola/tundra/proprietary/vendor/etc/cne/wqeclient/ROW/ROW_profile3.xml:$(TARGET_COPY_OUT_VENDOR)/etc/cne/wqeclient/ROW/ROW_profile3.xml \
+    vendor/motorola/tundra/proprietary/vendor/etc/cne/wqeclient/ROW/ROW_profile32.xml:$(TARGET_COPY_OUT_VENDOR)/etc/cne/wqeclient/ROW/ROW_profile32.xml \
+    vendor/motorola/tundra/proprietary/vendor/etc/cne/wqeclient/ROW/ROW_profile4.xml:$(TARGET_COPY_OUT_VENDOR)/etc/cne/wqeclient/ROW/ROW_profile4.xml \
+    vendor/motorola/tundra/proprietary/vendor/etc/cne/wqeclient/ROW/ROW_profile5.xml:$(TARGET_COPY_OUT_VENDOR)/etc/cne/wqeclient/ROW/ROW_profile5.xml \
+    vendor/motorola/tundra/proprietary/vendor/etc/cne/wqeclient/ROW/ROW_profile6.xml:$(TARGET_COPY_OUT_VENDOR)/etc/cne/wqeclient/ROW/ROW_profile6.xml \
+    vendor/motorola/tundra/proprietary/vendor/etc/cne/wqeclient/ROW/ROW_profile7.xml:$(TARGET_COPY_OUT_VENDOR)/etc/cne/wqeclient/ROW/ROW_profile7.xml \
+    vendor/motorola/tundra/proprietary/vendor/etc/cne/wqeclient/VZW/VZW_profile1.xml:$(TARGET_COPY_OUT_VENDOR)/etc/cne/wqeclient/VZW/VZW_profile1.xml \
+    vendor/motorola/tundra/proprietary/vendor/etc/cne/wqeclient/VZW/VZW_profile2.xml:$(TARGET_COPY_OUT_VENDOR)/etc/cne/wqeclient/VZW/VZW_profile2.xml \
+    vendor/motorola/tundra/proprietary/vendor/etc/cne/wqeclient/VZW/VZW_profile3.xml:$(TARGET_COPY_OUT_VENDOR)/etc/cne/wqeclient/VZW/VZW_profile3.xml \
+    vendor/motorola/tundra/proprietary/vendor/etc/cne/wqeclient/VZW/VZW_profile4.xml:$(TARGET_COPY_OUT_VENDOR)/etc/cne/wqeclient/VZW/VZW_profile4.xml \
+    vendor/motorola/tundra/proprietary/vendor/etc/cne/wqeclient/VZW/VZW_profile5.xml:$(TARGET_COPY_OUT_VENDOR)/etc/cne/wqeclient/VZW/VZW_profile5.xml \
+    vendor/motorola/tundra/proprietary/vendor/etc/cne/wqeclient/VZW/VZW_profile6.xml:$(TARGET_COPY_OUT_VENDOR)/etc/cne/wqeclient/VZW/VZW_profile6.xml \
+    vendor/motorola/tundra/proprietary/vendor/etc/configstore/vpp.configstore.xml:$(TARGET_COPY_OUT_VENDOR)/etc/configstore/vpp.configstore.xml \
+    vendor/motorola/tundra/proprietary/vendor/etc/cvp/v2.0/facedetection/model1.dat:$(TARGET_COPY_OUT_VENDOR)/etc/cvp/v2.0/facedetection/model1.dat \
+    vendor/motorola/tundra/proprietary/vendor/etc/cvp/v2.1/facedetection/model2.dat:$(TARGET_COPY_OUT_VENDOR)/etc/cvp/v2.1/facedetection/model2.dat \
+    vendor/motorola/tundra/proprietary/vendor/etc/data/dsi_config.xml:$(TARGET_COPY_OUT_VENDOR)/etc/data/dsi_config.xml \
+    vendor/motorola/tundra/proprietary/vendor/etc/data/netmgr_config.xml:$(TARGET_COPY_OUT_VENDOR)/etc/data/netmgr_config.xml \
+    vendor/motorola/tundra/proprietary/vendor/etc/default-permissions/com.qualcomm.qti.cne.xml:$(TARGET_COPY_OUT_VENDOR)/etc/default-permissions/com.qualcomm.qti.cne.xml \
+    vendor/motorola/tundra/proprietary/vendor/etc/display/DPU660.xml:$(TARGET_COPY_OUT_VENDOR)/etc/display/DPU660.xml \
+    vendor/motorola/tundra/proprietary/vendor/etc/display/DPU670.xml:$(TARGET_COPY_OUT_VENDOR)/etc/display/DPU670.xml \
+    vendor/motorola/tundra/proprietary/vendor/etc/display/DPU720.xml:$(TARGET_COPY_OUT_VENDOR)/etc/display/DPU720.xml \
+    vendor/motorola/tundra/proprietary/vendor/etc/display/DPU7__.xml:$(TARGET_COPY_OUT_VENDOR)/etc/display/DPU7__.xml \
+    vendor/motorola/tundra/proprietary/vendor/etc/display/advanced_sf_offsets.xml:$(TARGET_COPY_OUT_VENDOR)/etc/display/advanced_sf_offsets.xml \
+    vendor/motorola/tundra/proprietary/vendor/etc/hdr_tm_config.xml:$(TARGET_COPY_OUT_VENDOR)/etc/hdr_tm_config.xml \
     vendor/motorola/tundra/proprietary/vendor/etc/init/android.hardware.biometrics.fingerprint@2.1-service-ets.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/android.hardware.biometrics.fingerprint@2.1-service-ets.rc \
+    vendor/motorola/tundra/proprietary/vendor/etc/init/android.hardware.bluetooth@1.0-service-qti.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/android.hardware.bluetooth@1.0-service-qti.rc \
+    vendor/motorola/tundra/proprietary/vendor/etc/init/android.hardware.drm@1.1-service.wfdhdcp.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/android.hardware.drm@1.1-service.wfdhdcp.rc \
+    vendor/motorola/tundra/proprietary/vendor/etc/init/android.hardware.drm@1.3-service.widevine.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/android.hardware.drm@1.3-service.widevine.rc \
+    vendor/motorola/tundra/proprietary/vendor/etc/init/android.hardware.gatekeeper@1.0-service-qti.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/android.hardware.gatekeeper@1.0-service-qti.rc \
+    vendor/motorola/tundra/proprietary/vendor/etc/init/android.hardware.keymaster@4.1-service-qti.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/android.hardware.keymaster@4.1-service-qti.rc \
+    vendor/motorola/tundra/proprietary/vendor/etc/init/cnd.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/cnd.rc \
+    vendor/motorola/tundra/proprietary/vendor/etc/init/com.qualcomm.qti.wifidisplayhal@1.0-service.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/com.qualcomm.qti.wifidisplayhal@1.0-service.rc \
+    vendor/motorola/tundra/proprietary/vendor/etc/init/dataadpl.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/dataadpl.rc \
+    vendor/motorola/tundra/proprietary/vendor/etc/init/dataqti.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/dataqti.rc \
+    vendor/motorola/tundra/proprietary/vendor/etc/init/dpmQmiMgr.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/dpmQmiMgr.rc \
+    vendor/motorola/tundra/proprietary/vendor/etc/init/ims_rtp_daemon.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/ims_rtp_daemon.rc \
+    vendor/motorola/tundra/proprietary/vendor/etc/init/imsdaemon.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/imsdaemon.rc \
+    vendor/motorola/tundra/proprietary/vendor/etc/init/init-qcril-data.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/init-qcril-data.rc \
+    vendor/motorola/tundra/proprietary/vendor/etc/init/init.qti.media.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/init.qti.media.rc \
+    vendor/motorola/tundra/proprietary/vendor/etc/init/init.time_daemon.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/init.time_daemon.rc \
+    vendor/motorola/tundra/proprietary/vendor/etc/init/init.vendor.sensors.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/init.vendor.sensors.rc \
+    vendor/motorola/tundra/proprietary/vendor/etc/init/init.vendor.wlan.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/init.vendor.wlan.rc \
+    vendor/motorola/tundra/proprietary/vendor/etc/init/init_thermal-engine.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/init_thermal-engine.rc \
+    vendor/motorola/tundra/proprietary/vendor/etc/init/ipa_fws.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/ipa_fws.rc \
     vendor/motorola/tundra/proprietary/vendor/etc/init/motorola.hardware.camera.desktop@2.0-service.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/motorola.hardware.camera.desktop@2.0-service.rc \
     vendor/motorola/tundra/proprietary/vendor/etc/init/motorola.hardware.camera.imgtuner@1.0-service.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/motorola.hardware.camera.imgtuner@1.0-service.rc \
+    vendor/motorola/tundra/proprietary/vendor/etc/init/netmgrd.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/netmgrd.rc \
+    vendor/motorola/tundra/proprietary/vendor/etc/init/port-bridge.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/port-bridge.rc \
+    vendor/motorola/tundra/proprietary/vendor/etc/init/poweropt-service.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/poweropt-service.rc \
+    vendor/motorola/tundra/proprietary/vendor/etc/init/qconfig.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/qconfig.rc \
+    vendor/motorola/tundra/proprietary/vendor/etc/init/qcrilNrd.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/qcrilNrd.rc \
+    vendor/motorola/tundra/proprietary/vendor/etc/init/qdcmss.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/qdcmss.rc \
+    vendor/motorola/tundra/proprietary/vendor/etc/init/qmipriod.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/qmipriod.rc \
+    vendor/motorola/tundra/proprietary/vendor/etc/init/qseecomd.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/qseecomd.rc \
+    vendor/motorola/tundra/proprietary/vendor/etc/init/shsusrd.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/shsusrd.rc \
+    vendor/motorola/tundra/proprietary/vendor/etc/init/vendor.display.color@1.0-service.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/vendor.display.color@1.0-service.rc \
+    vendor/motorola/tundra/proprietary/vendor/etc/init/vendor.qti.adsprpc-guestos-service.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/vendor.qti.adsprpc-guestos-service.rc \
+    vendor/motorola/tundra/proprietary/vendor/etc/init/vendor.qti.cdsprpc-service.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/vendor.qti.cdsprpc-service.rc \
+    vendor/motorola/tundra/proprietary/vendor/etc/init/vendor.qti.diag.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/vendor.qti.diag.rc \
+    vendor/motorola/tundra/proprietary/vendor/etc/init/vendor.qti.hardware.alarm@1.0-service.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/vendor.qti.hardware.alarm@1.0-service.rc \
+    vendor/motorola/tundra/proprietary/vendor/etc/init/vendor.qti.hardware.capabilityconfigstore@1.0-service.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/vendor.qti.hardware.capabilityconfigstore@1.0-service.rc \
+    vendor/motorola/tundra/proprietary/vendor/etc/init/vendor.qti.hardware.charger_monitor@1.0-service.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/vendor.qti.hardware.charger_monitor@1.0-service.rc \
+    vendor/motorola/tundra/proprietary/vendor/etc/init/vendor.qti.hardware.dsp@1.0-service.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/vendor.qti.hardware.dsp@1.0-service.rc \
+    vendor/motorola/tundra/proprietary/vendor/etc/init/vendor.qti.hardware.eid@1.0-service.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/vendor.qti.hardware.eid@1.0-service.rc \
+    vendor/motorola/tundra/proprietary/vendor/etc/init/vendor.qti.hardware.iop@2.0-service.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/vendor.qti.hardware.iop@2.0-service.rc \
+    vendor/motorola/tundra/proprietary/vendor/etc/init/vendor.qti.hardware.perf@2.2-service.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/vendor.qti.hardware.perf@2.2-service.rc \
+    vendor/motorola/tundra/proprietary/vendor/etc/init/vendor.qti.hardware.qseecom@1.0-service.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/vendor.qti.hardware.qseecom@1.0-service.rc \
+    vendor/motorola/tundra/proprietary/vendor/etc/init/vendor.qti.hardware.sensorscalibrate@1.0-service.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/vendor.qti.hardware.sensorscalibrate@1.0-service.rc \
+    vendor/motorola/tundra/proprietary/vendor/etc/init/vendor.qti.hardware.servicetracker@1.2-service.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/vendor.qti.hardware.servicetracker@1.2-service.rc \
+    vendor/motorola/tundra/proprietary/vendor/etc/init/vendor.qti.hardware.soter@1.0-service.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/vendor.qti.hardware.soter@1.0-service.rc \
+    vendor/motorola/tundra/proprietary/vendor/etc/init/vendor.qti.hardware.trustedui@1.0-service-qti.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/vendor.qti.hardware.trustedui@1.0-service-qti.rc \
+    vendor/motorola/tundra/proprietary/vendor/etc/init/vendor.qti.hardware.tui_comm@1.0-service-qti.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/vendor.qti.hardware.tui_comm@1.0-service-qti.rc \
+    vendor/motorola/tundra/proprietary/vendor/etc/init/vendor.qti.media.c2@1.0-service.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/vendor.qti.media.c2@1.0-service.rc \
+    vendor/motorola/tundra/proprietary/vendor/etc/init/vendor.qti.qspmhal@1.0-service.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/vendor.qti.qspmhal@1.0-service.rc \
+    vendor/motorola/tundra/proprietary/vendor/etc/init/vendor.qti.rmt_storage.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/vendor.qti.rmt_storage.rc \
+    vendor/motorola/tundra/proprietary/vendor/etc/init/vendor.qti.tftp.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/vendor.qti.tftp.rc \
+    vendor/motorola/tundra/proprietary/vendor/etc/init/vendor.sensors.qti.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/vendor.sensors.qti.rc \
+    vendor/motorola/tundra/proprietary/vendor/etc/init/vendor.sensors.sscrpcd.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/vendor.sensors.sscrpcd.rc \
+    vendor/motorola/tundra/proprietary/vendor/etc/init/vppservice.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/vppservice.rc \
+    vendor/motorola/tundra/proprietary/vendor/etc/init/wfdvndservice.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/wfdvndservice.rc \
     vendor/motorola/tundra/proprietary/vendor/etc/libnfc-nci.conf:$(TARGET_COPY_OUT_VENDOR)/etc/libnfc-nci.conf \
     vendor/motorola/tundra/proprietary/vendor/etc/libnfc-nxp.conf:$(TARGET_COPY_OUT_VENDOR)/etc/libnfc-nxp.conf \
+    vendor/motorola/tundra/proprietary/vendor/etc/lm/AdaptLaunchFeature.xml:$(TARGET_COPY_OUT_VENDOR)/etc/lm/AdaptLaunchFeature.xml \
+    vendor/motorola/tundra/proprietary/vendor/etc/lm/AppClassifierFeature.xml:$(TARGET_COPY_OUT_VENDOR)/etc/lm/AppClassifierFeature.xml \
+    vendor/motorola/tundra/proprietary/vendor/etc/lm/GameOptimizationFeature.xml:$(TARGET_COPY_OUT_VENDOR)/etc/lm/GameOptimizationFeature.xml \
+    vendor/motorola/tundra/proprietary/vendor/etc/lm/PreKillFeature.xml:$(TARGET_COPY_OUT_VENDOR)/etc/lm/PreKillFeature.xml \
+    vendor/motorola/tundra/proprietary/vendor/etc/lm/gPLAFFeature.xml:$(TARGET_COPY_OUT_VENDOR)/etc/lm/gPLAFFeature.xml \
+    vendor/motorola/tundra/proprietary/vendor/etc/lm/prekill/prekill_2GB.data:$(TARGET_COPY_OUT_VENDOR)/etc/lm/prekill/prekill_2GB.data \
+    vendor/motorola/tundra/proprietary/vendor/etc/lm/prekill/prekill_4GB.data:$(TARGET_COPY_OUT_VENDOR)/etc/lm/prekill/prekill_4GB.data \
+    vendor/motorola/tundra/proprietary/vendor/etc/lm/prekill/prekill_6GB.data:$(TARGET_COPY_OUT_VENDOR)/etc/lm/prekill/prekill_6GB.data \
+    vendor/motorola/tundra/proprietary/vendor/etc/lm/sPLHFeature.xml:$(TARGET_COPY_OUT_VENDOR)/etc/lm/sPLHFeature.xml \
+    vendor/motorola/tundra/proprietary/vendor/etc/media/video_system_specs.json:$(TARGET_COPY_OUT_VENDOR)/etc/media/video_system_specs.json \
+    vendor/motorola/tundra/proprietary/vendor/etc/media_lahaina/video_system_specs.json:$(TARGET_COPY_OUT_VENDOR)/etc/media_lahaina/video_system_specs.json \
+    vendor/motorola/tundra/proprietary/vendor/etc/media_yupik_v0/video_system_specs.json:$(TARGET_COPY_OUT_VENDOR)/etc/media_yupik_v0/video_system_specs.json \
+    vendor/motorola/tundra/proprietary/vendor/etc/media_yupik_v1/video_system_specs.json:$(TARGET_COPY_OUT_VENDOR)/etc/media_yupik_v1/video_system_specs.json \
+    vendor/motorola/tundra/proprietary/vendor/etc/msm_irqbalance.conf:$(TARGET_COPY_OUT_VENDOR)/etc/msm_irqbalance.conf \
+    vendor/motorola/tundra/proprietary/vendor/etc/perf/commonresourceconfigs.xml:$(TARGET_COPY_OUT_VENDOR)/etc/perf/commonresourceconfigs.xml \
+    vendor/motorola/tundra/proprietary/vendor/etc/perf/commonsysnodesconfigs.xml:$(TARGET_COPY_OUT_VENDOR)/etc/perf/commonsysnodesconfigs.xml \
+    vendor/motorola/tundra/proprietary/vendor/etc/perf/perfboostsconfig.xml:$(TARGET_COPY_OUT_VENDOR)/etc/perf/perfboostsconfig.xml \
+    vendor/motorola/tundra/proprietary/vendor/etc/perf/perfconfigstore.xml:$(TARGET_COPY_OUT_VENDOR)/etc/perf/perfconfigstore.xml \
+    vendor/motorola/tundra/proprietary/vendor/etc/perf/targetconfig.xml:$(TARGET_COPY_OUT_VENDOR)/etc/perf/targetconfig.xml \
+    vendor/motorola/tundra/proprietary/vendor/etc/perf/targetresourceconfigs.xml:$(TARGET_COPY_OUT_VENDOR)/etc/perf/targetresourceconfigs.xml \
+    vendor/motorola/tundra/proprietary/vendor/etc/permissions/vendor-qti-hardware-sensorscalibrate.xml:$(TARGET_COPY_OUT_VENDOR)/etc/permissions/vendor-qti-hardware-sensorscalibrate.xml \
+    vendor/motorola/tundra/proprietary/vendor/etc/powerhint.xml:$(TARGET_COPY_OUT_VENDOR)/etc/powerhint.xml \
+    vendor/motorola/tundra/proprietary/vendor/etc/pwr/PowerFeatureConfig.xml:$(TARGET_COPY_OUT_VENDOR)/etc/pwr/PowerFeatureConfig.xml \
+    vendor/motorola/tundra/proprietary/vendor/etc/pwr/VideoPowerOptFeature.xml:$(TARGET_COPY_OUT_VENDOR)/etc/pwr/VideoPowerOptFeature.xml \
+    vendor/motorola/tundra/proprietary/vendor/etc/qcril_database/qcrilNr.db:$(TARGET_COPY_OUT_VENDOR)/etc/qcril_database/qcrilNr.db \
+    vendor/motorola/tundra/proprietary/vendor/etc/qcril_database/upgrade/config/10.0_config.sql:$(TARGET_COPY_OUT_VENDOR)/etc/qcril_database/upgrade/config/10.0_config.sql \
+    vendor/motorola/tundra/proprietary/vendor/etc/qcril_database/upgrade/config/11.0_config.sql:$(TARGET_COPY_OUT_VENDOR)/etc/qcril_database/upgrade/config/11.0_config.sql \
+    vendor/motorola/tundra/proprietary/vendor/etc/qcril_database/upgrade/config/12.0_config.sql:$(TARGET_COPY_OUT_VENDOR)/etc/qcril_database/upgrade/config/12.0_config.sql \
+    vendor/motorola/tundra/proprietary/vendor/etc/qcril_database/upgrade/config/13.0_config.sql:$(TARGET_COPY_OUT_VENDOR)/etc/qcril_database/upgrade/config/13.0_config.sql \
+    vendor/motorola/tundra/proprietary/vendor/etc/qcril_database/upgrade/config/6.0_config.sql:$(TARGET_COPY_OUT_VENDOR)/etc/qcril_database/upgrade/config/6.0_config.sql \
+    vendor/motorola/tundra/proprietary/vendor/etc/qcril_database/upgrade/config/9.0_config.sql:$(TARGET_COPY_OUT_VENDOR)/etc/qcril_database/upgrade/config/9.0_config.sql \
+    vendor/motorola/tundra/proprietary/vendor/etc/qcril_database/upgrade/ecc/0_initial.sql:$(TARGET_COPY_OUT_VENDOR)/etc/qcril_database/upgrade/ecc/0_initial.sql \
+    vendor/motorola/tundra/proprietary/vendor/etc/qcril_database/upgrade/ecc/10_version_qcrildb.sql:$(TARGET_COPY_OUT_VENDOR)/etc/qcril_database/upgrade/ecc/10_version_qcrildb.sql \
+    vendor/motorola/tundra/proprietary/vendor/etc/qcril_database/upgrade/ecc/11_version_qcrildb.sql:$(TARGET_COPY_OUT_VENDOR)/etc/qcril_database/upgrade/ecc/11_version_qcrildb.sql \
+    vendor/motorola/tundra/proprietary/vendor/etc/qcril_database/upgrade/ecc/12_version_qcrildb.sql:$(TARGET_COPY_OUT_VENDOR)/etc/qcril_database/upgrade/ecc/12_version_qcrildb.sql \
+    vendor/motorola/tundra/proprietary/vendor/etc/qcril_database/upgrade/ecc/13_version_qcrildb.sql:$(TARGET_COPY_OUT_VENDOR)/etc/qcril_database/upgrade/ecc/13_version_qcrildb.sql \
+    vendor/motorola/tundra/proprietary/vendor/etc/qcril_database/upgrade/ecc/14_version_qcrildb.sql:$(TARGET_COPY_OUT_VENDOR)/etc/qcril_database/upgrade/ecc/14_version_qcrildb.sql \
+    vendor/motorola/tundra/proprietary/vendor/etc/qcril_database/upgrade/ecc/15_version_qcrildb.sql:$(TARGET_COPY_OUT_VENDOR)/etc/qcril_database/upgrade/ecc/15_version_qcrildb.sql \
+    vendor/motorola/tundra/proprietary/vendor/etc/qcril_database/upgrade/ecc/16_version_qcrildb.sql:$(TARGET_COPY_OUT_VENDOR)/etc/qcril_database/upgrade/ecc/16_version_qcrildb.sql \
+    vendor/motorola/tundra/proprietary/vendor/etc/qcril_database/upgrade/ecc/17_version_qcrildb.sql:$(TARGET_COPY_OUT_VENDOR)/etc/qcril_database/upgrade/ecc/17_version_qcrildb.sql \
+    vendor/motorola/tundra/proprietary/vendor/etc/qcril_database/upgrade/ecc/18_version_qcrildb.sql:$(TARGET_COPY_OUT_VENDOR)/etc/qcril_database/upgrade/ecc/18_version_qcrildb.sql \
+    vendor/motorola/tundra/proprietary/vendor/etc/qcril_database/upgrade/ecc/19_version_qcrildb.sql:$(TARGET_COPY_OUT_VENDOR)/etc/qcril_database/upgrade/ecc/19_version_qcrildb.sql \
+    vendor/motorola/tundra/proprietary/vendor/etc/qcril_database/upgrade/ecc/20_version_qcrildb.sql:$(TARGET_COPY_OUT_VENDOR)/etc/qcril_database/upgrade/ecc/20_version_qcrildb.sql \
+    vendor/motorola/tundra/proprietary/vendor/etc/qcril_database/upgrade/ecc/21_version_qcrildb.sql:$(TARGET_COPY_OUT_VENDOR)/etc/qcril_database/upgrade/ecc/21_version_qcrildb.sql \
+    vendor/motorola/tundra/proprietary/vendor/etc/qcril_database/upgrade/ecc/22_version_qcrildb.sql:$(TARGET_COPY_OUT_VENDOR)/etc/qcril_database/upgrade/ecc/22_version_qcrildb.sql \
+    vendor/motorola/tundra/proprietary/vendor/etc/qcril_database/upgrade/ecc/23_version_qcrildb.sql:$(TARGET_COPY_OUT_VENDOR)/etc/qcril_database/upgrade/ecc/23_version_qcrildb.sql \
+    vendor/motorola/tundra/proprietary/vendor/etc/qcril_database/upgrade/ecc/24_version_qcrildb.sql:$(TARGET_COPY_OUT_VENDOR)/etc/qcril_database/upgrade/ecc/24_version_qcrildb.sql \
+    vendor/motorola/tundra/proprietary/vendor/etc/qcril_database/upgrade/ecc/25_version_qcrildb.sql:$(TARGET_COPY_OUT_VENDOR)/etc/qcril_database/upgrade/ecc/25_version_qcrildb.sql \
+    vendor/motorola/tundra/proprietary/vendor/etc/qcril_database/upgrade/ecc/26_version_qcrildb.sql:$(TARGET_COPY_OUT_VENDOR)/etc/qcril_database/upgrade/ecc/26_version_qcrildb.sql \
+    vendor/motorola/tundra/proprietary/vendor/etc/qcril_database/upgrade/ecc/27_version_qcrildb.sql:$(TARGET_COPY_OUT_VENDOR)/etc/qcril_database/upgrade/ecc/27_version_qcrildb.sql \
+    vendor/motorola/tundra/proprietary/vendor/etc/qcril_database/upgrade/ecc/28_version_qcrildb.sql:$(TARGET_COPY_OUT_VENDOR)/etc/qcril_database/upgrade/ecc/28_version_qcrildb.sql \
+    vendor/motorola/tundra/proprietary/vendor/etc/qcril_database/upgrade/ecc/29_version_qcrildb.sql:$(TARGET_COPY_OUT_VENDOR)/etc/qcril_database/upgrade/ecc/29_version_qcrildb.sql \
+    vendor/motorola/tundra/proprietary/vendor/etc/qcril_database/upgrade/ecc/30_version_qcrildb.sql:$(TARGET_COPY_OUT_VENDOR)/etc/qcril_database/upgrade/ecc/30_version_qcrildb.sql \
+    vendor/motorola/tundra/proprietary/vendor/etc/qcril_database/upgrade/ecc/31_version_qcrildb.sql:$(TARGET_COPY_OUT_VENDOR)/etc/qcril_database/upgrade/ecc/31_version_qcrildb.sql \
+    vendor/motorola/tundra/proprietary/vendor/etc/qcril_database/upgrade/ecc/33_version_qcrildb.sql:$(TARGET_COPY_OUT_VENDOR)/etc/qcril_database/upgrade/ecc/33_version_qcrildb.sql \
+    vendor/motorola/tundra/proprietary/vendor/etc/qcril_database/upgrade/ecc/34_version_qcrildb.sql:$(TARGET_COPY_OUT_VENDOR)/etc/qcril_database/upgrade/ecc/34_version_qcrildb.sql \
+    vendor/motorola/tundra/proprietary/vendor/etc/qcril_database/upgrade/ecc/35_version_qcrildb.sql:$(TARGET_COPY_OUT_VENDOR)/etc/qcril_database/upgrade/ecc/35_version_qcrildb.sql \
+    vendor/motorola/tundra/proprietary/vendor/etc/qcril_database/upgrade/ecc/36_version_qcrildb.sql:$(TARGET_COPY_OUT_VENDOR)/etc/qcril_database/upgrade/ecc/36_version_qcrildb.sql \
+    vendor/motorola/tundra/proprietary/vendor/etc/qcril_database/upgrade/ecc/37_version_qcrildb.sql:$(TARGET_COPY_OUT_VENDOR)/etc/qcril_database/upgrade/ecc/37_version_qcrildb.sql \
+    vendor/motorola/tundra/proprietary/vendor/etc/qcril_database/upgrade/ecc/38_version_qcrildb.sql:$(TARGET_COPY_OUT_VENDOR)/etc/qcril_database/upgrade/ecc/38_version_qcrildb.sql \
+    vendor/motorola/tundra/proprietary/vendor/etc/qcril_database/upgrade/ecc/39_version_qcrildb.sql:$(TARGET_COPY_OUT_VENDOR)/etc/qcril_database/upgrade/ecc/39_version_qcrildb.sql \
+    vendor/motorola/tundra/proprietary/vendor/etc/qcril_database/upgrade/ecc/3_version_qcrildb.sql:$(TARGET_COPY_OUT_VENDOR)/etc/qcril_database/upgrade/ecc/3_version_qcrildb.sql \
+    vendor/motorola/tundra/proprietary/vendor/etc/qcril_database/upgrade/ecc/40_version_qcrildb.sql:$(TARGET_COPY_OUT_VENDOR)/etc/qcril_database/upgrade/ecc/40_version_qcrildb.sql \
+    vendor/motorola/tundra/proprietary/vendor/etc/qcril_database/upgrade/ecc/41_version_qcrildb.sql:$(TARGET_COPY_OUT_VENDOR)/etc/qcril_database/upgrade/ecc/41_version_qcrildb.sql \
+    vendor/motorola/tundra/proprietary/vendor/etc/qcril_database/upgrade/ecc/42_version_qcrildb.sql:$(TARGET_COPY_OUT_VENDOR)/etc/qcril_database/upgrade/ecc/42_version_qcrildb.sql \
+    vendor/motorola/tundra/proprietary/vendor/etc/qcril_database/upgrade/ecc/43_version_qcrildb.sql:$(TARGET_COPY_OUT_VENDOR)/etc/qcril_database/upgrade/ecc/43_version_qcrildb.sql \
+    vendor/motorola/tundra/proprietary/vendor/etc/qcril_database/upgrade/ecc/44_version_qcrildb.sql:$(TARGET_COPY_OUT_VENDOR)/etc/qcril_database/upgrade/ecc/44_version_qcrildb.sql \
+    vendor/motorola/tundra/proprietary/vendor/etc/qcril_database/upgrade/ecc/45_version_qcrildb.sql:$(TARGET_COPY_OUT_VENDOR)/etc/qcril_database/upgrade/ecc/45_version_qcrildb.sql \
+    vendor/motorola/tundra/proprietary/vendor/etc/qcril_database/upgrade/ecc/46_version_qcrildb.sql:$(TARGET_COPY_OUT_VENDOR)/etc/qcril_database/upgrade/ecc/46_version_qcrildb.sql \
+    vendor/motorola/tundra/proprietary/vendor/etc/qcril_database/upgrade/ecc/47_version_qcrildb.sql:$(TARGET_COPY_OUT_VENDOR)/etc/qcril_database/upgrade/ecc/47_version_qcrildb.sql \
+    vendor/motorola/tundra/proprietary/vendor/etc/qcril_database/upgrade/ecc/4_version_qcrildb.sql:$(TARGET_COPY_OUT_VENDOR)/etc/qcril_database/upgrade/ecc/4_version_qcrildb.sql \
+    vendor/motorola/tundra/proprietary/vendor/etc/qcril_database/upgrade/ecc/5_version_qcrildb.sql:$(TARGET_COPY_OUT_VENDOR)/etc/qcril_database/upgrade/ecc/5_version_qcrildb.sql \
+    vendor/motorola/tundra/proprietary/vendor/etc/qcril_database/upgrade/ecc/6_version_qcrildb.sql:$(TARGET_COPY_OUT_VENDOR)/etc/qcril_database/upgrade/ecc/6_version_qcrildb.sql \
+    vendor/motorola/tundra/proprietary/vendor/etc/qcril_database/upgrade/ecc/7_version_qcrildb.sql:$(TARGET_COPY_OUT_VENDOR)/etc/qcril_database/upgrade/ecc/7_version_qcrildb.sql \
+    vendor/motorola/tundra/proprietary/vendor/etc/qcril_database/upgrade/ecc/8_version_qcrildb.sql:$(TARGET_COPY_OUT_VENDOR)/etc/qcril_database/upgrade/ecc/8_version_qcrildb.sql \
+    vendor/motorola/tundra/proprietary/vendor/etc/qcril_database/upgrade/ecc/9_version_qcrildb.sql:$(TARGET_COPY_OUT_VENDOR)/etc/qcril_database/upgrade/ecc/9_version_qcrildb.sql \
+    vendor/motorola/tundra/proprietary/vendor/etc/qcril_database/upgrade/other/2_version_add_wps_config_qcrilnr.sql:$(TARGET_COPY_OUT_VENDOR)/etc/qcril_database/upgrade/other/2_version_add_wps_config_qcrilnr.sql \
+    vendor/motorola/tundra/proprietary/vendor/etc/qcril_database/upgrade/other/3_version_update_wps_config_qcrilnr.sql:$(TARGET_COPY_OUT_VENDOR)/etc/qcril_database/upgrade/other/3_version_update_wps_config_qcrilnr.sql \
+    vendor/motorola/tundra/proprietary/vendor/etc/qcril_database/upgrade/other/6_version_change_property_table_qcrilnr.sql:$(TARGET_COPY_OUT_VENDOR)/etc/qcril_database/upgrade/other/6_version_change_property_table_qcrilnr.sql \
     vendor/motorola/tundra/proprietary/vendor/etc/qdcm_calib_data_mipi_mot_cmd_csot_c_1080p_dsc_655.xml:$(TARGET_COPY_OUT_VENDOR)/etc/qdcm_calib_data_mipi_mot_cmd_csot_c_1080p_dsc_655.xml \
     vendor/motorola/tundra/proprietary/vendor/etc/qdcm_calib_data_mipi_mot_cmd_tm_c_1080p_dsc_655.xml:$(TARGET_COPY_OUT_VENDOR)/etc/qdcm_calib_data_mipi_mot_cmd_tm_c_1080p_dsc_655.xml \
+    vendor/motorola/tundra/proprietary/vendor/etc/sec_config:$(TARGET_COPY_OUT_VENDOR)/etc/sec_config \
+    vendor/motorola/tundra/proprietary/vendor/etc/seccomp_policy/codec2.vendor.base-arm.policy:$(TARGET_COPY_OUT_VENDOR)/etc/seccomp_policy/codec2.vendor.base-arm.policy \
+    vendor/motorola/tundra/proprietary/vendor/etc/seccomp_policy/codec2.vendor.ext-arm.policy:$(TARGET_COPY_OUT_VENDOR)/etc/seccomp_policy/codec2.vendor.ext-arm.policy \
+    vendor/motorola/tundra/proprietary/vendor/etc/seccomp_policy/imsrtp.policy:$(TARGET_COPY_OUT_VENDOR)/etc/seccomp_policy/imsrtp.policy \
+    vendor/motorola/tundra/proprietary/vendor/etc/seccomp_policy/qcrilnr@2.0.policy:$(TARGET_COPY_OUT_VENDOR)/etc/seccomp_policy/qcrilnr@2.0.policy \
+    vendor/motorola/tundra/proprietary/vendor/etc/seccomp_policy/qspm.policy:$(TARGET_COPY_OUT_VENDOR)/etc/seccomp_policy/qspm.policy \
+    vendor/motorola/tundra/proprietary/vendor/etc/seccomp_policy/qti-systemd.policy:$(TARGET_COPY_OUT_VENDOR)/etc/seccomp_policy/qti-systemd.policy \
+    vendor/motorola/tundra/proprietary/vendor/etc/seccomp_policy/vendor.qti.hardware.dsp.policy:$(TARGET_COPY_OUT_VENDOR)/etc/seccomp_policy/vendor.qti.hardware.dsp.policy \
+    vendor/motorola/tundra/proprietary/vendor/etc/seccomp_policy/wfdhdcphalservice.policy:$(TARGET_COPY_OUT_VENDOR)/etc/seccomp_policy/wfdhdcphalservice.policy \
+    vendor/motorola/tundra/proprietary/vendor/etc/seccomp_policy/wfdvndservice.policy:$(TARGET_COPY_OUT_VENDOR)/etc/seccomp_policy/wfdvndservice.policy \
+    vendor/motorola/tundra/proprietary/vendor/etc/seccomp_policy/wifidisplayhalservice.policy:$(TARGET_COPY_OUT_VENDOR)/etc/seccomp_policy/wifidisplayhalservice.policy \
     vendor/motorola/tundra/proprietary/vendor/etc/sensors/config/lahaina_default_sensors.json:$(TARGET_COPY_OUT_VENDOR)/etc/sensors/config/lahaina_default_sensors.json \
     vendor/motorola/tundra/proprietary/vendor/etc/sensors/config/lahaina_dynamic_sensors.json:$(TARGET_COPY_OUT_VENDOR)/etc/sensors/config/lahaina_dynamic_sensors.json \
     vendor/motorola/tundra/proprietary/vendor/etc/sensors/config/lahaina_icm4x6xx.json:$(TARGET_COPY_OUT_VENDOR)/etc/sensors/config/lahaina_icm4x6xx.json \
@@ -3220,16 +3428,122 @@ PRODUCT_COPY_FILES += \
     vendor/motorola/tundra/proprietary/vendor/etc/sensors/config/sns_tilt_to_wake.json:$(TARGET_COPY_OUT_VENDOR)/etc/sensors/config/sns_tilt_to_wake.json \
     vendor/motorola/tundra/proprietary/vendor/etc/sensors/config/sns_wrist_pedo.json:$(TARGET_COPY_OUT_VENDOR)/etc/sensors/config/sns_wrist_pedo.json \
     vendor/motorola/tundra/proprietary/vendor/etc/sensors/sns_reg_config:$(TARGET_COPY_OUT_VENDOR)/etc/sensors/sns_reg_config \
+    vendor/motorola/tundra/proprietary/vendor/etc/snapdragon_color_libs_config.xml:$(TARGET_COPY_OUT_VENDOR)/etc/snapdragon_color_libs_config.xml \
+    vendor/motorola/tundra/proprietary/vendor/etc/ssg/ta_config.json:$(TARGET_COPY_OUT_VENDOR)/etc/ssg/ta_config.json \
+    vendor/motorola/tundra/proprietary/vendor/etc/ssg/tz_whitelist.json:$(TARGET_COPY_OUT_VENDOR)/etc/ssg/tz_whitelist.json \
     vendor/motorola/tundra/proprietary/vendor/etc/vhw.xml:$(TARGET_COPY_OUT_VENDOR)/etc/vhw.xml \
+    vendor/motorola/tundra/proprietary/vendor/etc/video_system_specs.json:$(TARGET_COPY_OUT_VENDOR)/etc/video_system_specs.json \
+    vendor/motorola/tundra/proprietary/vendor/etc/wfdconfig.xml:$(TARGET_COPY_OUT_VENDOR)/etc/wfdconfig.xml \
+    vendor/motorola/tundra/proprietary/vendor/etc/wifi/aoa_cldb_falcon.bin:$(TARGET_COPY_OUT_VENDOR)/etc/wifi/aoa_cldb_falcon.bin \
+    vendor/motorola/tundra/proprietary/vendor/etc/wifi/aoa_cldb_swl14.bin:$(TARGET_COPY_OUT_VENDOR)/etc/wifi/aoa_cldb_swl14.bin \
     vendor/motorola/tundra/proprietary/vendor/firmware/CAMERA_ICP.elf:$(TARGET_COPY_OUT_VENDOR)/firmware/CAMERA_ICP.elf \
     vendor/motorola/tundra/proprietary/vendor/firmware/CAMERA_ICP_170.elf:$(TARGET_COPY_OUT_VENDOR)/firmware/CAMERA_ICP_170.elf \
+    vendor/motorola/tundra/proprietary/vendor/firmware/a615_zap.b00:$(TARGET_COPY_OUT_VENDOR)/firmware/a615_zap.b00 \
+    vendor/motorola/tundra/proprietary/vendor/firmware/a615_zap.b01:$(TARGET_COPY_OUT_VENDOR)/firmware/a615_zap.b01 \
+    vendor/motorola/tundra/proprietary/vendor/firmware/a615_zap.b02:$(TARGET_COPY_OUT_VENDOR)/firmware/a615_zap.b02 \
+    vendor/motorola/tundra/proprietary/vendor/firmware/a615_zap.elf:$(TARGET_COPY_OUT_VENDOR)/firmware/a615_zap.elf \
+    vendor/motorola/tundra/proprietary/vendor/firmware/a615_zap.mdt:$(TARGET_COPY_OUT_VENDOR)/firmware/a615_zap.mdt \
+    vendor/motorola/tundra/proprietary/vendor/firmware/a619_gmu.bin:$(TARGET_COPY_OUT_VENDOR)/firmware/a619_gmu.bin \
+    vendor/motorola/tundra/proprietary/vendor/firmware/a630_sqe.fw:$(TARGET_COPY_OUT_VENDOR)/firmware/a630_sqe.fw \
     vendor/motorola/tundra/proprietary/vendor/firmware/aw882xx_pid_1852_acf.bin:$(TARGET_COPY_OUT_VENDOR)/firmware/aw882xx_pid_1852_acf.bin \
     vendor/motorola/tundra/proprietary/vendor/firmware/aw882xx_pid_2113_acf.bin:$(TARGET_COPY_OUT_VENDOR)/firmware/aw882xx_pid_2113_acf.bin \
     vendor/motorola/tundra/proprietary/vendor/firmware/aw882xx_spk_reg.bin:$(TARGET_COPY_OUT_VENDOR)/firmware/aw882xx_spk_reg.bin \
     vendor/motorola/tundra/proprietary/vendor/firmware/aw_skt.bin:$(TARGET_COPY_OUT_VENDOR)/firmware/aw_skt.bin \
+    vendor/motorola/tundra/proprietary/vendor/firmware/evass-lt.b00:$(TARGET_COPY_OUT_VENDOR)/firmware/evass-lt.b00 \
+    vendor/motorola/tundra/proprietary/vendor/firmware/evass-lt.b01:$(TARGET_COPY_OUT_VENDOR)/firmware/evass-lt.b01 \
+    vendor/motorola/tundra/proprietary/vendor/firmware/evass-lt.b02:$(TARGET_COPY_OUT_VENDOR)/firmware/evass-lt.b02 \
+    vendor/motorola/tundra/proprietary/vendor/firmware/evass-lt.b03:$(TARGET_COPY_OUT_VENDOR)/firmware/evass-lt.b03 \
+    vendor/motorola/tundra/proprietary/vendor/firmware/evass-lt.b04:$(TARGET_COPY_OUT_VENDOR)/firmware/evass-lt.b04 \
+    vendor/motorola/tundra/proprietary/vendor/firmware/evass-lt.b05:$(TARGET_COPY_OUT_VENDOR)/firmware/evass-lt.b05 \
+    vendor/motorola/tundra/proprietary/vendor/firmware/evass-lt.b06:$(TARGET_COPY_OUT_VENDOR)/firmware/evass-lt.b06 \
+    vendor/motorola/tundra/proprietary/vendor/firmware/evass-lt.b07:$(TARGET_COPY_OUT_VENDOR)/firmware/evass-lt.b07 \
+    vendor/motorola/tundra/proprietary/vendor/firmware/evass-lt.b08:$(TARGET_COPY_OUT_VENDOR)/firmware/evass-lt.b08 \
+    vendor/motorola/tundra/proprietary/vendor/firmware/evass-lt.b09:$(TARGET_COPY_OUT_VENDOR)/firmware/evass-lt.b09 \
+    vendor/motorola/tundra/proprietary/vendor/firmware/evass-lt.b10:$(TARGET_COPY_OUT_VENDOR)/firmware/evass-lt.b10 \
+    vendor/motorola/tundra/proprietary/vendor/firmware/evass-lt.b11:$(TARGET_COPY_OUT_VENDOR)/firmware/evass-lt.b11 \
+    vendor/motorola/tundra/proprietary/vendor/firmware/evass-lt.b12:$(TARGET_COPY_OUT_VENDOR)/firmware/evass-lt.b12 \
+    vendor/motorola/tundra/proprietary/vendor/firmware/evass-lt.b13:$(TARGET_COPY_OUT_VENDOR)/firmware/evass-lt.b13 \
+    vendor/motorola/tundra/proprietary/vendor/firmware/evass-lt.b14:$(TARGET_COPY_OUT_VENDOR)/firmware/evass-lt.b14 \
+    vendor/motorola/tundra/proprietary/vendor/firmware/evass-lt.b15:$(TARGET_COPY_OUT_VENDOR)/firmware/evass-lt.b15 \
+    vendor/motorola/tundra/proprietary/vendor/firmware/evass-lt.b16:$(TARGET_COPY_OUT_VENDOR)/firmware/evass-lt.b16 \
+    vendor/motorola/tundra/proprietary/vendor/firmware/evass-lt.b17:$(TARGET_COPY_OUT_VENDOR)/firmware/evass-lt.b17 \
+    vendor/motorola/tundra/proprietary/vendor/firmware/evass-lt.b18:$(TARGET_COPY_OUT_VENDOR)/firmware/evass-lt.b18 \
+    vendor/motorola/tundra/proprietary/vendor/firmware/evass-lt.b19:$(TARGET_COPY_OUT_VENDOR)/firmware/evass-lt.b19 \
+    vendor/motorola/tundra/proprietary/vendor/firmware/evass-lt.mbn:$(TARGET_COPY_OUT_VENDOR)/firmware/evass-lt.mbn \
+    vendor/motorola/tundra/proprietary/vendor/firmware/evass-lt.mdt:$(TARGET_COPY_OUT_VENDOR)/firmware/evass-lt.mdt \
+    vendor/motorola/tundra/proprietary/vendor/firmware/evass.b00:$(TARGET_COPY_OUT_VENDOR)/firmware/evass.b00 \
+    vendor/motorola/tundra/proprietary/vendor/firmware/evass.b01:$(TARGET_COPY_OUT_VENDOR)/firmware/evass.b01 \
+    vendor/motorola/tundra/proprietary/vendor/firmware/evass.b02:$(TARGET_COPY_OUT_VENDOR)/firmware/evass.b02 \
+    vendor/motorola/tundra/proprietary/vendor/firmware/evass.b03:$(TARGET_COPY_OUT_VENDOR)/firmware/evass.b03 \
+    vendor/motorola/tundra/proprietary/vendor/firmware/evass.b04:$(TARGET_COPY_OUT_VENDOR)/firmware/evass.b04 \
+    vendor/motorola/tundra/proprietary/vendor/firmware/evass.b05:$(TARGET_COPY_OUT_VENDOR)/firmware/evass.b05 \
+    vendor/motorola/tundra/proprietary/vendor/firmware/evass.b06:$(TARGET_COPY_OUT_VENDOR)/firmware/evass.b06 \
+    vendor/motorola/tundra/proprietary/vendor/firmware/evass.b07:$(TARGET_COPY_OUT_VENDOR)/firmware/evass.b07 \
+    vendor/motorola/tundra/proprietary/vendor/firmware/evass.b08:$(TARGET_COPY_OUT_VENDOR)/firmware/evass.b08 \
+    vendor/motorola/tundra/proprietary/vendor/firmware/evass.b09:$(TARGET_COPY_OUT_VENDOR)/firmware/evass.b09 \
+    vendor/motorola/tundra/proprietary/vendor/firmware/evass.b10:$(TARGET_COPY_OUT_VENDOR)/firmware/evass.b10 \
+    vendor/motorola/tundra/proprietary/vendor/firmware/evass.b11:$(TARGET_COPY_OUT_VENDOR)/firmware/evass.b11 \
+    vendor/motorola/tundra/proprietary/vendor/firmware/evass.b12:$(TARGET_COPY_OUT_VENDOR)/firmware/evass.b12 \
+    vendor/motorola/tundra/proprietary/vendor/firmware/evass.b13:$(TARGET_COPY_OUT_VENDOR)/firmware/evass.b13 \
+    vendor/motorola/tundra/proprietary/vendor/firmware/evass.b14:$(TARGET_COPY_OUT_VENDOR)/firmware/evass.b14 \
+    vendor/motorola/tundra/proprietary/vendor/firmware/evass.b15:$(TARGET_COPY_OUT_VENDOR)/firmware/evass.b15 \
+    vendor/motorola/tundra/proprietary/vendor/firmware/evass.b16:$(TARGET_COPY_OUT_VENDOR)/firmware/evass.b16 \
+    vendor/motorola/tundra/proprietary/vendor/firmware/evass.b17:$(TARGET_COPY_OUT_VENDOR)/firmware/evass.b17 \
+    vendor/motorola/tundra/proprietary/vendor/firmware/evass.b18:$(TARGET_COPY_OUT_VENDOR)/firmware/evass.b18 \
+    vendor/motorola/tundra/proprietary/vendor/firmware/evass.b19:$(TARGET_COPY_OUT_VENDOR)/firmware/evass.b19 \
+    vendor/motorola/tundra/proprietary/vendor/firmware/evass.mbn:$(TARGET_COPY_OUT_VENDOR)/firmware/evass.mbn \
+    vendor/motorola/tundra/proprietary/vendor/firmware/evass.mdt:$(TARGET_COPY_OUT_VENDOR)/firmware/evass.mdt \
     vendor/motorola/tundra/proprietary/vendor/firmware/goodix-csot-gt9916S-2206120a-62adb7ba-tundra.bin:$(TARGET_COPY_OUT_VENDOR)/firmware/goodix-csot-gt9916S-2206120a-62adb7ba-tundra.bin \
     vendor/motorola/tundra/proprietary/vendor/firmware/goodix-tianma-gt9916S-2206120a-62ad7261-tundra.bin:$(TARGET_COPY_OUT_VENDOR)/firmware/goodix-tianma-gt9916S-2206120a-62ad7261-tundra.bin \
     vendor/motorola/tundra/proprietary/vendor/firmware/mot_dw9781c.prog:$(TARGET_COPY_OUT_VENDOR)/firmware/mot_dw9781c.prog \
+    vendor/motorola/tundra/proprietary/vendor/firmware/vpu20_2v.b01:$(TARGET_COPY_OUT_VENDOR)/firmware/vpu20_2v.b01 \
+    vendor/motorola/tundra/proprietary/vendor/firmware/vpu20_2v.b02:$(TARGET_COPY_OUT_VENDOR)/firmware/vpu20_2v.b02 \
+    vendor/motorola/tundra/proprietary/vendor/firmware/vpu20_2v.b03:$(TARGET_COPY_OUT_VENDOR)/firmware/vpu20_2v.b03 \
+    vendor/motorola/tundra/proprietary/vendor/firmware/vpu20_2v.b04:$(TARGET_COPY_OUT_VENDOR)/firmware/vpu20_2v.b04 \
+    vendor/motorola/tundra/proprietary/vendor/firmware/vpu20_2v.b05:$(TARGET_COPY_OUT_VENDOR)/firmware/vpu20_2v.b05 \
+    vendor/motorola/tundra/proprietary/vendor/firmware/vpu20_2v.b06:$(TARGET_COPY_OUT_VENDOR)/firmware/vpu20_2v.b06 \
+    vendor/motorola/tundra/proprietary/vendor/firmware/vpu20_2v.b07:$(TARGET_COPY_OUT_VENDOR)/firmware/vpu20_2v.b07 \
+    vendor/motorola/tundra/proprietary/vendor/firmware/vpu20_2v.b08:$(TARGET_COPY_OUT_VENDOR)/firmware/vpu20_2v.b08 \
+    vendor/motorola/tundra/proprietary/vendor/firmware/vpu20_2v.b09:$(TARGET_COPY_OUT_VENDOR)/firmware/vpu20_2v.b09 \
+    vendor/motorola/tundra/proprietary/vendor/firmware/vpu20_2v.b10:$(TARGET_COPY_OUT_VENDOR)/firmware/vpu20_2v.b10 \
+    vendor/motorola/tundra/proprietary/vendor/firmware/vpu20_2v.b11:$(TARGET_COPY_OUT_VENDOR)/firmware/vpu20_2v.b11 \
+    vendor/motorola/tundra/proprietary/vendor/firmware/vpu20_2v.b12:$(TARGET_COPY_OUT_VENDOR)/firmware/vpu20_2v.b12 \
+    vendor/motorola/tundra/proprietary/vendor/firmware/vpu20_2v.b13:$(TARGET_COPY_OUT_VENDOR)/firmware/vpu20_2v.b13 \
+    vendor/motorola/tundra/proprietary/vendor/firmware/vpu20_2v.b14:$(TARGET_COPY_OUT_VENDOR)/firmware/vpu20_2v.b14 \
+    vendor/motorola/tundra/proprietary/vendor/firmware/vpu20_2v.b15:$(TARGET_COPY_OUT_VENDOR)/firmware/vpu20_2v.b15 \
+    vendor/motorola/tundra/proprietary/vendor/firmware/vpu20_2v.b16:$(TARGET_COPY_OUT_VENDOR)/firmware/vpu20_2v.b16 \
+    vendor/motorola/tundra/proprietary/vendor/firmware/vpu20_2v.b17:$(TARGET_COPY_OUT_VENDOR)/firmware/vpu20_2v.b17 \
+    vendor/motorola/tundra/proprietary/vendor/firmware/vpu20_2v.b18:$(TARGET_COPY_OUT_VENDOR)/firmware/vpu20_2v.b18 \
+    vendor/motorola/tundra/proprietary/vendor/firmware/vpu20_2v.b19:$(TARGET_COPY_OUT_VENDOR)/firmware/vpu20_2v.b19 \
+    vendor/motorola/tundra/proprietary/vendor/firmware/vpu20_2v.mbn:$(TARGET_COPY_OUT_VENDOR)/firmware/vpu20_2v.mbn \
+    vendor/motorola/tundra/proprietary/vendor/firmware/vpu20_2v.mdt:$(TARGET_COPY_OUT_VENDOR)/firmware/vpu20_2v.mdt \
+    vendor/motorola/tundra/proprietary/vendor/firmware/vpu20_2v_unsigned.mbn:$(TARGET_COPY_OUT_VENDOR)/firmware/vpu20_2v_unsigned.mbn \
+    vendor/motorola/tundra/proprietary/vendor/firmware/vpu20_4v.b01:$(TARGET_COPY_OUT_VENDOR)/firmware/vpu20_4v.b01 \
+    vendor/motorola/tundra/proprietary/vendor/firmware/vpu20_4v.b02:$(TARGET_COPY_OUT_VENDOR)/firmware/vpu20_4v.b02 \
+    vendor/motorola/tundra/proprietary/vendor/firmware/vpu20_4v.b03:$(TARGET_COPY_OUT_VENDOR)/firmware/vpu20_4v.b03 \
+    vendor/motorola/tundra/proprietary/vendor/firmware/vpu20_4v.b04:$(TARGET_COPY_OUT_VENDOR)/firmware/vpu20_4v.b04 \
+    vendor/motorola/tundra/proprietary/vendor/firmware/vpu20_4v.b05:$(TARGET_COPY_OUT_VENDOR)/firmware/vpu20_4v.b05 \
+    vendor/motorola/tundra/proprietary/vendor/firmware/vpu20_4v.b06:$(TARGET_COPY_OUT_VENDOR)/firmware/vpu20_4v.b06 \
+    vendor/motorola/tundra/proprietary/vendor/firmware/vpu20_4v.b07:$(TARGET_COPY_OUT_VENDOR)/firmware/vpu20_4v.b07 \
+    vendor/motorola/tundra/proprietary/vendor/firmware/vpu20_4v.b08:$(TARGET_COPY_OUT_VENDOR)/firmware/vpu20_4v.b08 \
+    vendor/motorola/tundra/proprietary/vendor/firmware/vpu20_4v.b09:$(TARGET_COPY_OUT_VENDOR)/firmware/vpu20_4v.b09 \
+    vendor/motorola/tundra/proprietary/vendor/firmware/vpu20_4v.b10:$(TARGET_COPY_OUT_VENDOR)/firmware/vpu20_4v.b10 \
+    vendor/motorola/tundra/proprietary/vendor/firmware/vpu20_4v.b11:$(TARGET_COPY_OUT_VENDOR)/firmware/vpu20_4v.b11 \
+    vendor/motorola/tundra/proprietary/vendor/firmware/vpu20_4v.b12:$(TARGET_COPY_OUT_VENDOR)/firmware/vpu20_4v.b12 \
+    vendor/motorola/tundra/proprietary/vendor/firmware/vpu20_4v.b13:$(TARGET_COPY_OUT_VENDOR)/firmware/vpu20_4v.b13 \
+    vendor/motorola/tundra/proprietary/vendor/firmware/vpu20_4v.b14:$(TARGET_COPY_OUT_VENDOR)/firmware/vpu20_4v.b14 \
+    vendor/motorola/tundra/proprietary/vendor/firmware/vpu20_4v.b15:$(TARGET_COPY_OUT_VENDOR)/firmware/vpu20_4v.b15 \
+    vendor/motorola/tundra/proprietary/vendor/firmware/vpu20_4v.b16:$(TARGET_COPY_OUT_VENDOR)/firmware/vpu20_4v.b16 \
+    vendor/motorola/tundra/proprietary/vendor/firmware/vpu20_4v.b17:$(TARGET_COPY_OUT_VENDOR)/firmware/vpu20_4v.b17 \
+    vendor/motorola/tundra/proprietary/vendor/firmware/vpu20_4v.b18:$(TARGET_COPY_OUT_VENDOR)/firmware/vpu20_4v.b18 \
+    vendor/motorola/tundra/proprietary/vendor/firmware/vpu20_4v.b19:$(TARGET_COPY_OUT_VENDOR)/firmware/vpu20_4v.b19 \
+    vendor/motorola/tundra/proprietary/vendor/firmware/vpu20_4v.mbn:$(TARGET_COPY_OUT_VENDOR)/firmware/vpu20_4v.mbn \
+    vendor/motorola/tundra/proprietary/vendor/firmware/vpu20_4v.mdt:$(TARGET_COPY_OUT_VENDOR)/firmware/vpu20_4v.mdt \
+    vendor/motorola/tundra/proprietary/vendor/firmware/vpu20_4v_unsigned.mbn:$(TARGET_COPY_OUT_VENDOR)/firmware/vpu20_4v_unsigned.mbn \
+    vendor/motorola/tundra/proprietary/vendor/gpu/kbc/sequence_manifest.bin:$(TARGET_COPY_OUT_VENDOR)/gpu/kbc/sequence_manifest.bin \
+    vendor/motorola/tundra/proprietary/vendor/gpu/kbc/unified_kbcs_32.bin:$(TARGET_COPY_OUT_VENDOR)/gpu/kbc/unified_kbcs_32.bin \
+    vendor/motorola/tundra/proprietary/vendor/gpu/kbc/unified_kbcs_64.bin:$(TARGET_COPY_OUT_VENDOR)/gpu/kbc/unified_kbcs_64.bin \
+    vendor/motorola/tundra/proprietary/vendor/gpu/kbc/unified_ksqs.bin:$(TARGET_COPY_OUT_VENDOR)/gpu/kbc/unified_ksqs.bin \
     vendor/motorola/tundra/proprietary/vendor/lib64/camera/com.qti.sensormodule.mot_tundra_gc02m1b_tsp.bin:$(TARGET_COPY_OUT_VENDOR)/lib64/camera/com.qti.sensormodule.mot_tundra_gc02m1b_tsp.bin \
     vendor/motorola/tundra/proprietary/vendor/lib64/camera/com.qti.sensormodule.mot_tundra_hi1336_ofilm.bin:$(TARGET_COPY_OUT_VENDOR)/lib64/camera/com.qti.sensormodule.mot_tundra_hi1336_ofilm.bin \
     vendor/motorola/tundra/proprietary/vendor/lib64/camera/com.qti.sensormodule.mot_tundra_ov50a_sunny.bin:$(TARGET_COPY_OUT_VENDOR)/lib64/camera/com.qti.sensormodule.mot_tundra_ov50a_sunny.bin \
@@ -3245,8 +3559,159 @@ PRODUCT_COPY_FILES += \
     vendor/motorola/tundra/proprietary/vendor/lib64/camera/fdconfigvideolite.bin:$(TARGET_COPY_OUT_VENDOR)/lib64/camera/fdconfigvideolite.bin
 
 PRODUCT_PACKAGES += \
+    btaudio_offload_if \
+    eglSubDriverAndroid \
+    libEGL_adreno \
+    libGLESv1_CM_adreno \
+    libGLESv2_adreno \
+    libq3dtools_adreno \
+    libq3dtools_esx \
+    android.hardware.bluetooth@1.0-impl-qti \
+    vendor.qti.hardware.bluetooth_audio@2.0-impl \
+    vendor.qti.hardware.bluetooth_audio@2.1-impl \
+    vendor.qti.hardware.bluetooth_sar@1.1-impl \
+    vendor.qti.hardware.btconfigstore@1.0-impl \
+    vendor.qti.hardware.btconfigstore@2.0-impl \
+    vendor.qti.hardware.capabilityconfigstore@1.0-impl \
+    vulkan.adreno \
+    libC2D2 \
+    libCB \
+    libOpenCL \
+    libVkLayer_q3dtools \
+    libacdb-fts \
     libacdbloader \
+    libacdbrtac \
+    libadiertac \
+    libadreno_app_profiles \
+    libadreno_utils \
+    libadsprpc \
+    libaudcal \
+    libbluetooth_audio_session_qti \
+    libbluetooth_audio_session_qti_2_1 \
+    libbtnv \
+    libc2d30_bltlib \
     libcamxexternalformatutils \
+    libcapiv2svacnn \
+    libcapiv2svarnn \
+    libcapiv2vop \
+    libcdsp_default_listener \
+    libcdsprpc \
+    libconfigdb \
+    libcvp2_1 \
+    libcvp_common \
+    libdiag \
+    libdsi_netctrl \
+    libdsutils \
+    libfastcvdsp_stub \
+    libfastcvopt \
+    libgcs-calwrapper \
+    libgcs-ipc \
+    libgcs-osal \
+    libgcs \
+    libgpudataproducer \
+    libgsl \
+    libidl \
+    libkcl \
+    libkernelmanager \
+    liblistensoundmodel2 \
+    libllvm-glnext \
+    libllvm-qcom \
+    libmdmdetect \
+    libmdsprpc \
+    libmmosal_vendor \
+    libmulawdec \
+    libnetmgr \
+    libperfconfig \
+    libperfgluelayer \
+    libperfioctl \
+    libqcci_legacy \
+    libqcmaputils \
+    libqconfigclient \
+    libqdi \
+    libqdp \
+    libqmi \
+    libqmi_cci \
+    libqmi_client_helper \
+    libqmi_client_qmux \
+    libqmi_common_so \
+    libqmi_csi \
+    libqmi_encdec \
+    libqmi_legacy \
+    libqmiservices \
+    libqti-perfd-client \
+    libqti-perfd \
+    libqti-util \
+    libqti-utils \
+    libqtigef \
+    libscveCommon \
+    libscveCommon_stub \
+    libscveObjectSegmentation \
+    libscveObjectSegmentation_stub \
+    libscveObjectTracker \
+    libscveObjectTracker_stub \
+    libsoc_helper \
+    libthermalclient \
+    libvppclient \
+    libvpphcp \
+    libvpphvx \
+    libvpplibrary \
+    libxml \
+    libasphere \
+    libqcbassboost \
+    libqcreverb \
+    libqcvirt \
+    libshoebox \
+    vendor.qti.diaghal@1.0_vendor \
+    vendor.qti.hardware.bluetooth_sar@1.0 \
+    vendor.qti.hardware.bluetooth_sar@1.1 \
+    vendor.qti.hardware.dsp@1.0 \
+    vendor.qti.hardware.qconfig@1.0 \
+    vendor.qti.hardware.vpp@1.1 \
+    vendor.qti.hardware.vpp@1.2 \
+    vendor.qti.hardware.vpp@1.3 \
+    vendor.qti.hardware.vpp@2.0 \
+    vendor.qti.hardware.wifidisplaysession@1.0_vendor \
+    vendor.qti.memory.pasrmanager@1.0 \
+    vendor.qti.memory.pasrmanager@1.1 \
+    vendor.qti.qspmhal@1.0_vendor \
+    libDxHdcp \
+    libFileMux_proprietary \
+    libadm \
+    libmm-hdcpmgr \
+    libmmrtpdecoder_proprietary \
+    libmmrtpencoder_proprietary \
+    libqc2vppfilter \
+    libqcodec2_base \
+    libqcodec2_basecodec \
+    libqcodec2_core \
+    libqcodec2_hooks \
+    libqcodec2_platform \
+    libqcodec2_utils \
+    libqcodec2_v4l2codec \
+    libsmwrapper \
+    libwfdcodecv4l2_proprietary \
+    libwfdcommonutils_proprietary \
+    libwfdconfigutils_proprietary \
+    libwfddisplayconfig_proprietary \
+    libwfdhdcpcp \
+    libwfdhdcpservice_proprietary \
+    libwfdmminterface_proprietary \
+    libwfdmmservice_proprietary \
+    libwfdmmsrc_proprietary \
+    libwfdmodulehdcpsession \
+    libwfdrtsp_proprietary \
+    libwfdsessionmodule \
+    libwfdsourcesession_proprietary \
+    libwfdsourcesm_proprietary \
+    libwfduibcinterface_proprietary \
+    libwfduibcsink_proprietary \
+    libwfduibcsinkinterface_proprietary \
+    libwfduibcsrc_proprietary \
+    libwfduibcsrcinterface_proprietary \
+    libwfdutils_proprietary \
+    libmmieffectswrapper \
+    libspeakerbundle \
+    vendor.qti.hardware.wifidisplaysessionl@1.0-halimpl \
     com.mot.eeprom.mot_gt24p128e_ov50a_eeprom \
     com.mot.eeprom.mot_gt24p64e_hi1336_eeprom \
     com.mot.eeprom.mot_gt24p64e_s5kgd2_eeprom \
@@ -3356,15 +3821,64 @@ PRODUCT_PACKAGES += \
     com.qualcomm.mcx.distortionmapper \
     com.qualcomm.mcx.linearmapper \
     com.qualcomm.mcx.policy.mfl \
+    com.qualcomm.qti.dpm.api@1.0_vendor \
+    com.qualcomm.qti.imscmservice@1.0 \
+    com.qualcomm.qti.imscmservice@2.0 \
+    com.qualcomm.qti.imscmservice@2.1 \
+    com.qualcomm.qti.imscmservice@2.2 \
     com.qualcomm.qti.mcx.usecase.extension \
+    com.qualcomm.qti.uceservice@2.0 \
+    com.qualcomm.qti.uceservice@2.1 \
+    com.qualcomm.qti.uceservice@2.2 \
+    com.qualcomm.qti.uceservice@2.3 \
+    deviceInfoServiceModuleNr \
+    android.hardware.gatekeeper@1.0-impl-qti \
     camera.qcom \
+    com.dsi.ant@1.0-impl \
     com.qti.chi.override \
+    vendor.qti.gnss@4.2-impl \
+    vendor.qti.hardware.alarm@1.0-impl \
+    vendor.qti.hardware.eid@1.0-impl \
+    vendor.qti.hardware.fm@1.0-impl \
+    vendor.qti.hardware.qseecom@1.0-impl \
+    vendor.qti.hardware.sensorscalibrate@1.0-impl \
+    vendor.qti.hardware.servicetracker@1.2-impl \
+    vendor.qti.hardware.soter@1.0-impl \
+    lib-imscommon \
+    lib-imsdpl \
+    lib-imsqimf \
+    lib-imsrcsservice \
+    lib-imsservice \
+    lib-imsvtcore \
+    lib-imsxml \
+    lib-rtpcommon \
+    lib-rtpcore \
+    lib-rtpsl \
     libFace3DTA \
     libFace3D_hlos \
+    libGPQTEEC_vendor \
+    libGPTEE_vendor \
+    libGPreqcancel \
+    libGPreqcancel_svc \
     libQ6MSFR_manager_stub \
+    libQSEEComAPI \
+    libQTEEConnector_vendor \
+    libQnnHtp \
+    libQnnHtpV68Stub \
     libRbsFlow \
+    libTouchInputVM \
+    libTrustedInput \
+    libTrustedInputTZ \
+    libTrustedUI \
+    libTrustedUITZ \
+    libTrustedUIVM \
+    libadaptlaunch \
+    libadropbox \
+    libadsp_default_listener \
     libaidenoiser \
     libaidenoiserv2 \
+    libaoa \
+    libappclassifier \
     libarcsoft_chi_utils \
     libarcsoft_distortion_correction \
     libarcsoft_dual_sat \
@@ -3385,7 +3899,9 @@ PRODUCT_PACKAGES += \
     libarcsoft_super_night_se_raw_bin \
     libbitmlengine \
     libbitmlenginev2 \
+    libbt-hidlclient \
     libc2d_helper \
+    libcacertclient \
     libcamera_nn_stub \
     libcamerapostproc \
     libcamxfacialfeatures \
@@ -3398,16 +3914,60 @@ PRODUCT_PACKAGES += \
     libcamxswispiqmodule \
     libcamxswprocessalgo \
     libcamxtintlessalgo \
+    libcdfw \
+    libcdfw_remote_api \
     libchilog \
+    libcne \
+    libcneapiclient \
+    libcneoplookup \
     libcom.qti.chinodeutils \
+    libcpion \
+    libcvp_util \
+    libcvpcpuRev_skel \
+    libdataitems \
+    libdisp-aba \
+    libdisplayqos \
+    libdisplayskuutils \
+    libdpmqmihal \
+    libdpps \
+    libdrmfs \
+    libdrmtime \
     libdualcam_optical_zoom_control \
     libdualcam_video_optical_zoom \
     libets_teeclient_v3 \
     libface3d_dev \
+    libgameoptfeature \
+    libgplaf \
+    libhdr_tm \
+    libhdrdynamic \
+    libhdrdynamicootf \
     libipebpsstriping \
     libipebpsstriping170 \
+    libizat_client_api \
+    libizat_core \
+    libjnihelper \
     libjpege \
+    libkeymasterdeviceutils \
+    libkeymasterprovision \
+    libkeymasterutils \
+    liblbs_core \
+    liblearningmodule \
+    liblmutils-ns \
+    libloadalgo_stub \
+    libloc_api_v02 \
+    libloc_api_wds \
+    liblocationservice \
+    liblocationservice_glue \
+    liblog_vendor \
+    liblowi_client \
+    liblqe \
+    libmdmcutback \
+    libmemperfd \
+    libmeters-ns \
+    libmeters \
     libmfec \
+    libminkdescriptor \
+    libminksocket \
     libmmcamera_bestats \
     libmmcamera_cac3 \
     libmmcamera_faceproc \
@@ -3419,19 +3979,87 @@ PRODUCT_PACKAGES += \
     libmot_afd \
     libmot_chi_desktop_helper \
     libmot_engine_settings \
+    libmotext_inf \
     libmotoisdataqueue \
     libmpbase \
+    libnetmgr_common \
+    libnetmgr_nr_fusion \
+    libnetmgr_rmnet_ext \
+    libnlnetmgr \
     libofflinedump \
     libofflinelog \
     libopencv \
     libopestriping \
+    libops \
     libos \
+    libpdmapper \
+    libpdnotifier \
+    libperipheral_client \
+    libpowercore \
+    libprekill \
+    libqcbor \
+    libqcc_file_agent \
+    libqcrilNr \
+    libqcrilNrFramework \
+    libqcrilNrLogger \
+    libqcrilNrQtiBus \
+    libqcrilNrQtiMutex \
+    libqcrildatactl \
+    libqdcm-mode-parser \
+    libqisl \
     libqll10 \
     libqllengine \
+    libqmimotext \
+    libqrtr \
+    libqrtrclient \
+    libqseed3 \
+    libqsocket \
+    libqti-iopd-client \
+    libqti-iopd \
+    libqtikeymaster4 \
+    librcc \
+    librcmask \
+    libril-db \
+    libril-qc-ltedirectdisc \
+    libril-qc-radioconfig \
+    libril-qcril-hook-oem \
+    librilqmimiscservices \
+    librilqmiservices \
+    librpmb \
+    libsdm-color \
+    libsdm-colormgr-algo \
+    libsdm-diag \
+    libsdm-disp-vndapis \
+    libsdmextension \
+    libsdsprpc \
+    libsensorcal \
+    libsensorslog \
+    libsi \
+    libskewknob \
+    libsnapdragoncolor-manager \
+    libsnapdragoncolor-qdcm \
+    libsns_device_mode_stub \
+    libsns_fastRPC_util \
+    libsns_low_lat_stream_stub \
+    libsnsapi \
+    libsnsdiaglog \
+    libspcom \
+    libspl \
+    libsplh \
+    libssc \
+    libssc_default_listener \
+    libssd \
+    libsubsystem_control \
     libswregistrationalgo \
     libsynx \
+    libsystem_health_mon \
     libtfestriping \
     libthreadutils \
+    libtime_genoff \
+    libtinyxml2_1 \
+    libtrustedapploader \
+    libtzdrmgenprov \
+    libvideooptfeature \
     libvidhance \
     libvidhance_active_ois \
     libvidhance_dmbr \
@@ -3440,17 +4068,351 @@ PRODUCT_PACKAGES += \
     libvidhance_horizon_correction \
     libvidhance_stabilizer \
     libvidhance_zoom_stabilization \
+    libwms \
+    libwqe \
+    libwvhidl \
+    libxtadapter \
     motorola.hardware.camera.desktop@1.0 \
     motorola.hardware.camera.desktop@2.0 \
+    qcrilMarshal \
+    qcril_client \
+    qcrild_libqcrilnrutils \
+    qtiril-utils \
+    qtiwakelock \
     sensors.moto \
     sensors.ssc \
+    vendor.display.color@1.0 \
+    vendor.display.color@1.1 \
+    vendor.display.color@1.2 \
+    vendor.display.color@1.3 \
+    vendor.display.color@1.4 \
+    vendor.display.color@1.5 \
+    vendor.display.postproc@1.0 \
     vendor.egistec.hardware.fingerprint@4.0 \
+    vendor.qti.data.factory@2.0 \
+    vendor.qti.data.factory@2.1 \
+    vendor.qti.data.factory@2.2 \
+    vendor.qti.data.factory@2.3 \
+    vendor.qti.data.mwqem@1.0 \
+    vendor.qti.data.slm@1.0 \
+    vendor.qti.gnss@1.0 \
+    vendor.qti.gnss@1.1 \
+    vendor.qti.gnss@1.2 \
+    vendor.qti.gnss@2.0 \
+    vendor.qti.gnss@2.1 \
+    vendor.qti.gnss@3.0 \
+    vendor.qti.gnss@4.0 \
+    vendor.qti.gnss@4.1 \
+    vendor.qti.gnss@4.2-service \
+    vendor.qti.gnss@4.2 \
+    vendor.qti.hardware.alarm@1.0 \
+    vendor.qti.hardware.cacert@1.0 \
     vendor.qti.hardware.camera.postproc@1.0-service-impl \
+    vendor.qti.hardware.cvp@1.0 \
+    vendor.qti.hardware.data.cne.internal.api@1.0 \
+    vendor.qti.hardware.data.cne.internal.constants@1.0 \
+    vendor.qti.hardware.data.cne.internal.server@1.0 \
+    vendor.qti.hardware.data.connection@1.0 \
+    vendor.qti.hardware.data.connection@1.1 \
+    vendor.qti.hardware.data.dynamicdds@1.0 \
+    vendor.qti.hardware.data.iwlan@1.0 \
+    vendor.qti.hardware.data.latency@1.0 \
+    vendor.qti.hardware.data.lce@1.0 \
+    vendor.qti.hardware.data.qmi@1.0 \
+    vendor.qti.hardware.eid@1.0 \
     vendor.qti.hardware.fingerprint@1.0 \
+    vendor.qti.hardware.fm@1.0_vendor \
+    vendor.qti.hardware.iop@1.0 \
+    vendor.qti.hardware.iop@2.0 \
+    vendor.qti.hardware.mwqemadapter@1.0 \
+    vendor.qti.hardware.qccsyshal@1.0 \
+    vendor.qti.hardware.qseecom@1.0 \
+    vendor.qti.hardware.qteeconnector@1.0 \
+    vendor.qti.hardware.radio.am@1.0 \
+    vendor.qti.hardware.radio.ims@1.0 \
+    vendor.qti.hardware.radio.ims@1.1 \
+    vendor.qti.hardware.radio.ims@1.2 \
+    vendor.qti.hardware.radio.ims@1.3 \
+    vendor.qti.hardware.radio.ims@1.4 \
+    vendor.qti.hardware.radio.ims@1.5 \
+    vendor.qti.hardware.radio.ims@1.6 \
+    vendor.qti.hardware.radio.ims@1.7 \
+    vendor.qti.hardware.radio.ims@1.8 \
+    vendor.qti.hardware.radio.ims@1.9 \
+    vendor.qti.hardware.radio.internal.deviceinfo@1.0 \
+    vendor.qti.hardware.radio.lpa@1.0 \
+    vendor.qti.hardware.radio.lpa@1.1 \
+    vendor.qti.hardware.radio.lpa@1.2 \
+    vendor.qti.hardware.radio.qcrilhook@1.0 \
+    vendor.qti.hardware.radio.qtiradio@1.0 \
+    vendor.qti.hardware.radio.qtiradio@2.0 \
+    vendor.qti.hardware.radio.qtiradio@2.1 \
+    vendor.qti.hardware.radio.qtiradio@2.2 \
+    vendor.qti.hardware.radio.qtiradio@2.3 \
+    vendor.qti.hardware.radio.qtiradio@2.4 \
+    vendor.qti.hardware.radio.qtiradio@2.5 \
+    vendor.qti.hardware.radio.qtiradio@2.6 \
+    vendor.qti.hardware.radio.qtiradio@2.7 \
+    vendor.qti.hardware.radio.uim@1.0 \
+    vendor.qti.hardware.radio.uim@1.1 \
+    vendor.qti.hardware.radio.uim@1.2 \
+    vendor.qti.hardware.radio.uim_remote_client@1.0 \
+    vendor.qti.hardware.radio.uim_remote_client@1.1 \
+    vendor.qti.hardware.radio.uim_remote_client@1.2 \
+    vendor.qti.hardware.radio.uim_remote_server@1.0 \
+    vendor.qti.hardware.sensorscalibrate@1.0 \
+    vendor.qti.hardware.slmadapter@1.0 \
+    vendor.qti.hardware.soter@1.0 \
+    vendor.qti.hardware.trustedui@1.0 \
+    vendor.qti.hardware.trustedui@1.1 \
+    vendor.qti.hardware.trustedui@1.2 \
+    vendor.qti.hardware.tui_comm@1.0 \
+    vendor.qti.ims.callcapability@1.0 \
+    vendor.qti.ims.callinfo@1.0 \
+    vendor.qti.ims.configservice@1.0 \
+    vendor.qti.ims.configservice@1.1 \
+    vendor.qti.ims.connection@1.0 \
+    vendor.qti.ims.factory@1.0 \
+    vendor.qti.ims.factory@1.1 \
+    vendor.qti.ims.factory@2.0 \
+    vendor.qti.ims.factory@2.1 \
+    vendor.qti.ims.factory@2.2 \
+    vendor.qti.ims.rcsconfig@1.0 \
+    vendor.qti.ims.rcsconfig@1.1 \
+    vendor.qti.ims.rcsconfig@2.0 \
+    vendor.qti.ims.rcsconfig@2.1 \
+    vendor.qti.ims.rcssip@1.0 \
+    vendor.qti.ims.rcssip@1.1 \
+    vendor.qti.ims.rcssip@1.2 \
+    vendor.qti.ims.rcsuce@1.0 \
+    vendor.qti.ims.rcsuce@1.1 \
+    vendor.qti.ims.rcsuce@1.2 \
+    vendor.qti.imsrtpservice@3.0-service-Impl \
+    vendor.qti.imsrtpservice@3.0_vendor \
+    vendor.qti.latency@2.0 \
+    vendor.qti.latency@2.1 \
+    vendor.qti.qspmhal@1.0-impl \
+    bm2n06 \
+    bm2n08 \
+    bm2n12 \
+    bm2n13 \
+    bm2n14 \
+    bm2n15 \
+    capi_v2_aptX_CLHDADV_Encoder \
+    capi_v2_aptX_CLHDAD_Speech_Decoder \
+    libQ6MSFR_manager_skel \
+    libQnnHtpV68Skel \
+    libSuperSensor_skel \
+    libVppAisQnnHtp \
+    libVppFrcQnnHtp \
+    libVppQnnHtp \
+    libadsp_jpege_skel \
+    libapps_mem_heap \
+    libarcsoft_hdrplus_se_hvx_skel \
+    libbitml_nsp_skel \
+    libbitml_nsp_v2_skel \
+    libcamera_nn_skel \
+    libcvpdsp_2_1 \
+    libdspCV_skel \
+    libdsp_streamer_binning \
+    libfastcvadsp \
+    libfastcvdsp_skel \
+    libhdr_skel \
+    libmctfengine_skel \
+    libmobilenet_dsp_frc \
+    libmobilenet_dsp_frc_networks \
+    libscveObjectSegmentation_skel \
+    libscveT2T_skel \
+    libsns_device_mode_skel \
+    libsns_low_lat_stream_skel \
+    libsuper_res_networks \
+    libvpp_ais_networks \
+    libvpt_action_recognition \
+    libworker_pool \
+    com.qualcomm.qti.ant@1.0 \
+    libmmosal \
+    libmmparser_lite \
+    libmmrtpdecoder \
+    libmmrtpencoder \
+    libwfdavenhancements \
+    libwfdclient \
+    libwfdcommonutils \
+    libwfdconfigutils \
+    libwfddisplayconfig \
+    libwfdmminterface \
+    libwfdmmsink \
+    libwfdmmsrc_system \
+    libwfdrtsp \
+    libwfdservice \
+    libwfdsinksm \
+    libwfduibcinterface \
+    libwfduibcsink \
+    libwfduibcsinkinterface \
+    libwfduibcsrc \
+    libwfduibcsrcinterface \
+    vendor.qti.diaghal@1.0 \
+    vendor.qti.hardware.wifidisplaysession@1.0 \
+    com.qualcomm.qti.dpm.api@1.0 \
+    com.qualcomm.qti.wifidisplayhal@1.0 \
+    lib-imsvideocodec \
+    lib-imsvt \
+    lib-imsvtextutils \
+    lib-imsvtutils \
+    libdiag_system \
+    libdpmctmgr \
+    libdpmfdmgr \
+    libdpmframework \
+    libdpmtcm \
+    libimscamera_jni \
+    libimsmedia_jni \
+    libqspmsvc \
+    libwfdnative \
+    vendor.qti.ImsRtpService-V1-ndk \
+    vendor.qti.hardware.dpmservice@1.0 \
+    vendor.qti.imsrtpservice@3.0 \
+    vendor.qti.imsrtpservice@3.1 \
+    vendor.qti.qspmhal-V1-ndk \
+    vendor.qti.qspmhal@1.0 \
+    CACertService \
+    CneApp \
+    IWlanService \
+    TimeService \
     MotCamera3AI \
+    uimgbaservice \
     HotwordEnrollmentOKGoogleHEXAGON_WIDEBAND \
     HotwordEnrollmentXGoogleHEXAGON_WIDEBAND \
     MotCamera4 \
+    ImsRcsService \
+    PowerOffAlarm \
+    QtiTelephony \
+    QtiTelephonyService \
+    WfdService \
+    dpmserviceapp \
+    ims \
+    qcrilmsgtunnel \
+    WfdCommon \
+    tcmclient \
+    uimgbalibrary \
+    uimgbamanagerlibrary \
+    uimservicelibrary \
     com.android.hotwordenrollment.common.util \
+    com.qti.dpmframework \
+    dpmapi \
+    moto-telephony \
+    qcrilhook \
+    vendor.qti.hardware.alarm-V1.0-java \
+    vendor.qti.ims.configservice-V1.0-java \
+    vendor.qti.ims.configservice-V1.1-java \
+    vendor.qti.ims.connection-V1.0-java \
+    vendor.qti.ims.connectionaidlservice-V1-java \
+    vendor.qti.ims.factory-V1.1-java \
+    vendor.qti.ims.factory-V2.0-java \
+    vendor.qti.ims.factory-V2.1-java \
+    vendor.qti.ims.factory-V2.2-java \
+    vendor.qti.ims.factoryaidlservice-V1-java \
+    vendor.qti.ims.rcssip-V1.0-java \
+    vendor.qti.ims.rcssip-V1.1-java \
+    vendor.qti.ims.rcssip-V1.2-java \
+    vendor.qti.ims.rcssipaidlservice-V1-java \
+    vendor.qti.ims.rcsuce-V1.0-java \
+    vendor.qti.ims.rcsuce-V1.1-java \
+    vendor.qti.ims.rcsuce-V1.2-java \
+    manifest_android.hardware.drm@1.3-service.widevine.xml \
+    vendor.qti.diag.hal.service.xml \
+    vendor.qti.gnss@4.2-service.xml \
+    vendor.qti.hardware.servicetracker@1.2-service.xml \
+    adpl \
+    adsprpcd \
+    cdsprpcd \
+    charge_only_mode \
+    cnd \
+    cnss-daemon \
+    diag-router \
+    dpmQmiMgr \
+    dspservice \
+    hvdcp_opti \
+    android.hardware.authsecret@1.0-service-qti \
     android.hardware.biometrics.fingerprint@2.1-service-ets \
-    motorola.hardware.camera.desktop@2.0-service
+    android.hardware.bluetooth@1.0-service-qti \
+    android.hardware.drm@1.3-service.widevine \
+    android.hardware.gatekeeper@1.0-service-qti \
+    android.hardware.keymaster@4.1-service-qti \
+    motorola.hardware.camera.desktop@2.0-service \
+    qconfigservice \
+    qcrilNrd \
+    vendor.display.color@1.0-service \
+    vendor.qti.hardware.alarm@1.0-service \
+    vendor.qti.hardware.capabilityconfigstore@1.0-service \
+    vendor.qti.hardware.eid@1.0-service \
+    vendor.qti.hardware.iop@2.0-service \
+    vendor.qti.hardware.perf@2.2-service \
+    vendor.qti.hardware.qseecom@1.0-service \
+    vendor.qti.hardware.sensorscalibrate@1.0-service \
+    vendor.qti.hardware.servicetracker@1.2-service \
+    vendor.qti.hardware.soter@1.0-service \
+    vendor.qti.hardware.trustedui@1.0-service-qti \
+    vendor.qti.hardware.tui_comm@1.0-service-qti \
+    vendor.qti.media.c2@1.0-service \
+    ims_rtp_daemon \
+    imsdaemon \
+    irsc_util \
+    ks \
+    loadalgo \
+    loc_launcher \
+    lowi-server \
+    mbm_spy \
+    mlid \
+    motobox \
+    msm_irqbalance \
+    netmgrd \
+    pd-mapper \
+    pm-proxy \
+    pm-service \
+    port-bridge \
+    power_off_alarm \
+    poweropt-service \
+    ppd \
+    qcom-system-daemon \
+    qdcmss \
+    qmi_motext_hook \
+    qmipriod \
+    qrtr-cfg \
+    qrtr-lookup \
+    qrtr-ns \
+    qseecomd \
+    qti \
+    qtigetprop \
+    qtisetprop \
+    rmt_storage \
+    sensors.qti \
+    shsusrd \
+    sscrpcd \
+    tftp_server \
+    thermal-engine \
+    time_daemon \
+    vendor.qti.hardware.soter@1.0-provision \
+    vendor.qti.qspmhal@1.0-service \
+    vppservice \
+    wfdhdcphalservice \
+    wfdvndservice \
+    wifidisplayhalservice \
+    xtra-daemon \
+    dpmd \
+    qspmsvc \
+    wfdservice
+
+PRODUCT_PACKAGES += \
+    system_ext_priv-app_ims_lib_arm64_libimscamera_jni_so \
+    system_ext_priv-app_ims_lib_arm64_libimsmedia_jni_so \
+    vendor_bin_expat \
+    vendor_lib_libEGL_adreno_so \
+    vendor_lib_libGLESv2_adreno_so \
+    vendor_lib_libq3dtools_adreno_so \
+    vendor_lib64_rfsa_adsp_libsns_device_mode_skel_so \
+    vendor_lib64_rfsa_adsp_libsns_low_lat_stream_skel_so \
+    vendor_lib64_libEGL_adreno_so \
+    vendor_lib64_libGLESv2_adreno_so \
+    vendor_lib64_libq3dtools_adreno_so
+
+PRODUCT_BOOT_JARS += \
+    WfdCommon
