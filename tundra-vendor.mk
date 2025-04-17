@@ -3128,6 +3128,10 @@ PRODUCT_COPY_FILES += \
     vendor/motorola/tundra/proprietary/product/etc/CarrierSettings/s999480.pb:$(TARGET_COPY_OUT_PRODUCT)/etc/CarrierSettings/s999480.pb
 
 PRODUCT_COPY_FILES += \
+    vendor/motorola/tundra/proprietary/odm/etc/dolby/multimedia_dolby_dax_default.xml:$(TARGET_COPY_OUT_ODM)/etc/dolby/multimedia_dolby_dax_default.xml \
+    vendor/motorola/tundra/proprietary/odm/etc/init/vendor.dolby.media.c2@1.0-service.rc:$(TARGET_COPY_OUT_ODM)/etc/init/vendor.dolby.media.c2@1.0-service.rc \
+    vendor/motorola/tundra/proprietary/odm/etc/init/vendor.dolby_sp.hardware.dmssp@2.0-service.rc:$(TARGET_COPY_OUT_ODM)/etc/init/vendor.dolby_sp.hardware.dmssp@2.0-service.rc \
+    vendor/motorola/tundra/proprietary/odm/etc/init/vendor.dolby_v3_6.hardware.dms360@2.0-service.rc:$(TARGET_COPY_OUT_ODM)/etc/init/vendor.dolby_v3_6.hardware.dms360@2.0-service.rc \
     vendor/motorola/tundra/proprietary/product/etc/init/init.motcamera3.lens.rc:$(TARGET_COPY_OUT_PRODUCT)/etc/init/init.motcamera3.lens.rc \
     vendor/motorola/tundra/proprietary/product/etc/permissions/UimGba.xml:$(TARGET_COPY_OUT_PRODUCT)/etc/permissions/UimGba.xml \
     vendor/motorola/tundra/proprietary/product/etc/permissions/UimGbaManager.xml:$(TARGET_COPY_OUT_PRODUCT)/etc/permissions/UimGbaManager.xml \
@@ -4273,6 +4277,27 @@ PRODUCT_PACKAGES += \
     vendor.qti.imsrtpservice@3.1 \
     vendor.qti.qspmhal-V1-ndk \
     vendor.qti.qspmhal@1.0 \
+    libdapparamstorage_v3_6 \
+    libdeccfg_v3_6 \
+    libdlbdsservice_v3_6 \
+    vendor.dolby_v3_6.hardware.dms360@2.0 \
+    libstagefright_soft_ddpdec \
+    libhwdap_v3_6 \
+    libswdap_v3_6 \
+    libcodec2_hidl@1.0_sp \
+    libcodec2_hidl_plugin_sp \
+    libcodec2_soft_ac4dec_sp \
+    libcodec2_soft_common_sp \
+    libcodec2_soft_ddpdec_sp \
+    libcodec2_store_dolby_sp \
+    libcodec2_vndk_sp \
+    libdapparamstorage_sp \
+    libdeccfg_sp \
+    libdlbdsservice_sp \
+    libui_sp \
+    vendor.dolby_sp.hardware.dmssp@2.0-impl \
+    vendor.dolby_sp.hardware.dmssp@2.0 \
+    vendor.dolby_v3_6.hardware.dms360@2.0-impl \
     CACertService \
     CneApp \
     IWlanService \
@@ -4321,6 +4346,8 @@ PRODUCT_PACKAGES += \
     vendor.qti.diag.hal.service.xml \
     vendor.qti.gnss@4.2-service.xml \
     vendor.qti.hardware.servicetracker@1.2-service.xml \
+    manifest_dax_dolby_v3_6.xml \
+    vendor.dolby.hardware.dms.xml \
     adpl \
     adsprpcd \
     cdsprpcd \
@@ -4399,7 +4426,10 @@ PRODUCT_PACKAGES += \
     xtra-daemon \
     dpmd \
     qspmsvc \
-    wfdservice
+    wfdservice \
+    vendor.dolby_sp.hardware.dmssp@2.0-service \
+    vendor.dolby_sp.media.c2@1.0-service \
+    vendor.dolby_v3_6.hardware.dms360@2.0-service
 
 PRODUCT_PACKAGES += \
     system_ext_priv-app_ims_lib_arm64_libimscamera_jni_so \
