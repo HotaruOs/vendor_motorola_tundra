@@ -5393,67 +5393,6 @@ cc_prebuilt_library_shared {
 }
 
 cc_prebuilt_library_shared {
-    name: "libmmieffectswrapper",
-    owner: "motorola",
-    strip: {
-        none: true,
-    },
-    target: {
-        android_arm: {
-            srcs: [
-                "proprietary/vendor/lib/soundfx/libmmieffectswrapper.so",
-            ],
-            shared_libs: [
-                "libcutils",
-                "liblog",
-                "libutils",
-                "libtinyalsa",
-                "libc++",
-                "libc",
-                "libm",
-                "libdl",
-            ],
-        },
-    },
-    compile_multilib: "32",
-    relative_install_path: "soundfx",
-    prefer: true,
-    soc_specific: true,
-}
-
-cc_prebuilt_library_shared {
-    name: "libspeakerbundle",
-    owner: "motorola",
-    strip: {
-        none: true,
-    },
-    target: {
-        android_arm: {
-            srcs: [
-                "proprietary/vendor/lib/soundfx/libspeakerbundle.so",
-            ],
-            shared_libs: [
-                "liblog",
-                "libtinyalsa",
-                "libutils",
-                "libcutils",
-                "libsensorndkbridge",
-                "libaudioroute",
-                "libgui_vendor",
-                "libc++",
-                "libc",
-                "libm",
-                "libdl",
-            ],
-        },
-    },
-    compile_multilib: "32",
-    relative_install_path: "soundfx",
-    prefer: true,
-    soc_specific: true,
-}
-
-cc_prebuilt_library_shared {
     name: "com.mot.eeprom.mot_gt24p128e_ov50a_eeprom",
     owner: "motorola",
     strip: {
@@ -23348,6 +23287,15 @@ dex_import {
         "proprietary/product/framework/uimservicelibrary.jar",
     ],
     product_specific: true,
+}
+
+dex_import {
+    name: "audiosphere",
+    owner: "motorola",
+    jars: [
+        "proprietary/system_ext/framework/audiosphere.jar",
+    ],
+    system_ext_specific: true,
 }
 
 dex_import {
