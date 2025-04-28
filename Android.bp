@@ -23109,18 +23109,6 @@ android_app_import {
 }
 
 android_app_import {
-    name: "MotCamera3AI",
-    owner: "motorola",
-    apk: "proprietary/product/app/MotCamera3AI/MotCamera3AI.apk",
-    preprocessed: true,
-    presigned: true,
-    dex_preopt: {
-        enabled: false,
-    },
-    product_specific: true,
-}
-
-android_app_import {
     name: "uimgbaservice",
     owner: "motorola",
     apk: "proprietary/product/app/uimgbaservice/uimgbaservice.apk",
@@ -23147,25 +23135,6 @@ android_app_import {
     name: "HotwordEnrollmentXGoogleHEXAGON_WIDEBAND",
     owner: "motorola",
     apk: "proprietary/product/priv-app/HotwordEnrollmentXGoogleHEXAGON_WIDEBAND/HotwordEnrollmentXGoogleHEXAGON_WIDEBAND.apk",
-    certificate: "platform",
-    dex_preopt: {
-        enabled: false,
-    },
-    privileged: true,
-    product_specific: true,
-}
-
-android_app_import {
-    name: "MotCamera4",
-    owner: "motorola",
-    apk: "proprietary/product/priv-app/MotCamera4/MotCamera4.apk",
-    overrides: [
-        "Aperture",
-        "Camera",
-        "Camera2",
-        "Flash",
-        "GoogleCameraGo",
-    ],
     certificate: "platform",
     dex_preopt: {
         enabled: false,
