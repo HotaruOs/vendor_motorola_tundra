@@ -966,6 +966,8 @@ cc_prebuilt_library_shared {
                 "proprietary/vendor/lib/libOpenCL.so",
             ],
             shared_libs: [
+                "liblog",
+                "libcutils",
                 "libc++",
                 "libc",
                 "libm",
@@ -977,6 +979,8 @@ cc_prebuilt_library_shared {
                 "proprietary/vendor/lib64/libOpenCL.so",
             ],
             shared_libs: [
+                "liblog",
+                "libcutils",
                 "libc++",
                 "libc",
                 "libm",
@@ -986,6 +990,7 @@ cc_prebuilt_library_shared {
     },
     compile_multilib: "both",
     prefer: true,
+    allow_undefined_symbols: true,
     soc_specific: true,
 }
 
@@ -1597,7 +1602,6 @@ cc_prebuilt_library_shared {
     compile_multilib: "both",
     prefer: true,
     soc_specific: true,
-    allow_undefined_symbols: true,
 }
 
 cc_prebuilt_library_shared {
@@ -13574,6 +13578,7 @@ cc_prebuilt_library_shared {
                 "libtinyxml2_1",
                 "libcutils",
                 "libutils",
+                "libdisplayskuutils",
                 "libc++",
                 "libc",
                 "libm",
